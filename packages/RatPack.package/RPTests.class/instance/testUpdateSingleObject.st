@@ -1,18 +1,11 @@
 test - REST operations
 testUpdateSingleObject
 
-        | modelName jsonString urlToTestmodel insertedObject urlToFirstInsertedObject updatedJsonString |
-        modelName := 'testmodel'.
-        app registerModel: modelName on: RPTest with: #( 'test' 'variable').
- 
-        urlToTestmodel := '/api/testmodel'.
-        
-	  jsonString := '{"test":"foo","variable":"bar"}'.
-        RPTestHelper put: urlToTestmodel on: app content: jsonString.
- 
- 	  updatedJsonString := '{"test":"another","variable":"value"}'.
-        urlToFirstInsertedObject  := '/api/testmodel/1'.
-	  RPTestHelper put: urlToFirstInsertedObject  on: app content: updatedJsonString.
-   
-        insertedObject := RPTestHelper get: urlToFirstInsertedObject  on: app.
-        self assert: insertedObject contents contents = updatedJsonString.
+      |  |
+	"
+     	app registerModel: RPTestModel.
+	url := '/api/', (RPTestModel name).
+	     updateUrl  := '/api/',  (RPTestModel name) , '/1'.
+	RPTestHelper put: updateUrl on: app content: jsonstring.
+ 	"
+	self assert: false 
