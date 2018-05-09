@@ -1,18 +1,15 @@
 test - REST operations
 testPostObjectOnApplicationResponse
 	
-	"| url testJson response |
+	| url urlId testJson postResult getResult |
 	app registerModel: RPTestModel.
 	url := app class apiRoutePrefix, (RPTestModel name).
 	testJson := RPTestHelper getExampleJson.
-	response := RPTestHelper post: url on: app content: testJson.
-	self assert: (RPTestModel createJsonFor: 
-					(app database loadModelObject: 1 from: RPTestModel) object) 
-					equals: testJson.
+	urlId := url, '/1'.
+	postResult := RPTestHelper post: url on: app content: testJson.
+	getResult := (RPTestHelper get: (urlId) on: app).
+	self assert: postResult status =  #ok.
 	
-	self halt.
-	
-	self assert: (RPTestModel createJsonFor: 
-					(app database loadModelObject: 1 from: RPTestModel) object) 
-					equals: response."
+	self assert: postResult contentType = 'application/json'.
+	self assert: ((getResult contents contents) = (postResult contents contents)).
 	
