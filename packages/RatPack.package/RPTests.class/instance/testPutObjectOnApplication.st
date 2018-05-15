@@ -1,20 +1,16 @@
 test - REST operations
 testPutObjectOnApplication
 	
-	"| url urlId putResult getResult postResult testJson otherTestJson|
+	| url urlId putResult postResult testJson otherTestJson|
 	app registerModel: RPTestModel.
 	url := app class apiRoutePrefix, (RPTestModel name).
 	testJson := RPTestHelper getExampleJson.
 	otherTestJson := RPTestHelper getOtherExampleJson.
+	self assert: testJson ~= otherTestJson.
 	urlId := url, '/1'.
-	postResult :=RPTestHelper post: url on: app content: testJson.
-	
-	self assert: postResult status =  #ok.
-	self assert: postResult contentType = 'application/json'.
-	self assert: ((getResult contents contents) = (putResult contents contents)).
-	
+	postResult := RPTestHelper post: url on: app content: testJson.
 	putResult := RPTestHelper put: urlId on: app content: otherTestJson.
-	getResult := (RPTestHelper get: (urlId) on: app).
-	"
-	
+		
+	self assert: ((postResult contents contents) ~= (putResult contents contents)).
+	self assert: ((putResult contents contents) includesSubString: otherTestJson).
 	
