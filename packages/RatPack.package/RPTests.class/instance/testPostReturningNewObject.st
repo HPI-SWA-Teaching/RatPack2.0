@@ -1,5 +1,5 @@
 test - REST operations
-testPostObjectOnApplicationResponse
+testPostReturningNewObject
 	
 	| url urlId testJson postResult getResult |
 	app registerModel: RPTestModel.
@@ -8,8 +8,5 @@ testPostObjectOnApplicationResponse
 	urlId := url, '/1'.
 	postResult := RPTestHelper post: url on: app content: testJson.
 	getResult := (RPTestHelper get: (urlId) on: app).
-	self assert: postResult status =  #ok.
-	
-	self assert: postResult contentType = 'application/json'.
 	self assert: ((getResult contents contents) = (postResult contents contents)).
 	

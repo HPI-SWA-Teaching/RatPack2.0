@@ -1,5 +1,5 @@
 test - REST operations
-testPostObjectOnApplication
+testPost
 	
 	| url testJson |
 	app registerModel: RPTestModel.
