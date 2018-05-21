@@ -1,11 +1,15 @@
 routing
 route: aHttpRequest 
-	| method arguments match methodRoutes |
+	| method handlers match next index methodRoutes |
 	method := aHttpRequest method asLowercase asSymbol asMutator.
 	methodRoutes := self routesFor: method.
 	match := self findHandlerFor: aHttpRequest in: methodRoutes.
-
-	"args needed as array by self perfom: withArguments:"
-	arguments := (aHttpRequest url findTokens: '/') allButFirst asArray
-			ifEmpty: [^ self perform: match value].
-	^ self perform: match value withArguments: arguments
+	
+	handlers := self middleware at: (match value).
+	handlers add: #handlerDecorator:next: .
+	handlers add: match value.
+	index := 0.
+	next := [index := index +1.
+			(handlers at: index) handle: self dynamicEnvironment next: next].
+	self halt.
+	next value.
