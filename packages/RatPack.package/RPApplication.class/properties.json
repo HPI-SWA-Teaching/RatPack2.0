@@ -12,7 +12,8 @@
 		"routes",
 		"middleware",
 		"logWindow",
-		"settings" ],
+		"settings",
+		"defaultRoutesModelLookupTable" ],
 	"name" : "RPApplication",
 	"pools" : [
 		 ],

@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Testing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"app" ],
+	"name" : "RPTestRouteNamingStrategy",
+	"pools" : [
+		 ],
+	"super" : "RPRouteNamingStrategy",
+	"type" : "normal" }

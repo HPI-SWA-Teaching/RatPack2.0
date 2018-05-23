@@ -1,8 +1,9 @@
 endpoint
-getRegisteredObjectsFromRequest: aRPModelname
+getRegisteredObjectsFromRequest: aRoute
  
       | modelObjects string aRPModelClass |
-	aRPModelClass := self getRegisteredModel: aRPModelname.
+	
+	aRPModelClass := self getModelForRoute: aRoute.
       modelObjects := self database loadModelObjectsOf: aRPModelClass.  
 	string := '{"data":[', ((modelObjects collect: [:each |
 		each asJson]) joinSeparatedBy: ','), ']}'.

@@ -1,4 +1,4 @@
 constants
 htmlRoutePrefix
 
-	^ '/html' 
+	^ '/html/' 
