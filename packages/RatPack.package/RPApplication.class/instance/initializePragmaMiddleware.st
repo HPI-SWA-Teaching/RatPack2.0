@@ -3,5 +3,4 @@ initializePragmaMiddleware
 
 	| pragmas |
 	pragmas := (Pragma allNamed: #middleware: from: self class to: RPApplication).
-	pragmas do: [:pragma | self storeMiddleware: (pragma argumentAt: 1) for: pragma selector.].
-	self addDefaultMiddlewareToHandlersWithoutPragmas.
+	pragmas do: [:pragma | self middleware registerMiddleware: (pragma argumentAt: 1) forHandler: pragma selector. ].

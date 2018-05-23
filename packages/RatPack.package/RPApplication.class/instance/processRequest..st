@@ -2,10 +2,10 @@ routing
 processRequest: aHttpRequest
 
 	| response |
-	self
+	self 
 		request: aHttpRequest;
 		response: (HttpResponse fromString: '').
-	
+
 	[ self parseRequestContent: aHttpRequest ] on: Error do: [:e | ^ self badRequest ].
 	
 	[response := self route: aHttpRequest] on: Error do: [:e | self serverError: e].

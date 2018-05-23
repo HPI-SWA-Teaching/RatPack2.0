@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"newWith:" : "lj 5/23/2018 14:55" },
+	"instance" : {
+		"atHandler:" : "lj 5/23/2018 15:22",
+		"createInstanceFromSymbol:" : "lj 5/23/2018 13:49",
+		"globalMiddleware" : "lj 5/23/2018 14:59",
+		"globalMiddleware:" : "lj 5/23/2018 14:59",
+		"handlerMapping" : "lj 5/23/2018 13:53",
+		"includeGlobalMiddleware:" : "lj 5/23/2018 15:23",
+		"instanceForName:" : "lj 5/23/2018 13:52",
+		"instancesForHandler:" : "lj 5/23/2018 15:16",
+		"instancesMapping" : "lj 5/23/2018 13:53",
+		"registerMiddleware:forHandler:" : "lj 5/23/2018 14:17" } }

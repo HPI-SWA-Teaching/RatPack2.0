@@ -1,5 +1,5 @@
 as yet unclassified
 blacklist
 
-	"Returns a collection of regex which don't want to use the "
+	"Returns a collection of regex which handlers shall not to use the middleware"
 	self subclassResponsibility 

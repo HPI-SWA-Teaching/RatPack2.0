@@ -1,4 +1,4 @@
 accessing
 middleware
-	
-	^ middleware ifNil: [middleware := Dictionary new.]
+
+	^ middleware ifNil: [middleware := RPMiddlewareContainer newWith: self class globalMiddleware.]
