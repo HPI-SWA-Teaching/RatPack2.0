@@ -8,7 +8,8 @@
 	"instvars" : [
 		"handlerMapping",
 		"instanceMapping",
-		"globalMiddleware" ],
+		"globalMiddleware",
+		"globalMiddlewareKey" ],
 	"name" : "RPMiddlewareContainer",
 	"pools" : [
 		 ],

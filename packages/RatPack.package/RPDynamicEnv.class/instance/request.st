@@ -1,4 +1,4 @@
 as yet unclassified
 request
 	
-	^ self at: #rpRequest ifAbsent: []
+	^ self at: #rpRequest

@@ -1,4 +1,4 @@
 as yet unclassified
 response
 	
-	^ self at: #rpResponse ifAbsent: []
+	^ self at: #rpResponse

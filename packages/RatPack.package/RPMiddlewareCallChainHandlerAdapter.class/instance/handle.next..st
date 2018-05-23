@@ -1,10 +1,11 @@
 handler calling
 handle: anEnv next: aNext
 
-	| arguments |
+	| arguments response |
 	"args needed as array by self perfom: withArguments:"
-	self halt.
-	arguments := (anEnv request url findTokens: '/') allButFirst asArray
-			ifEmpty: [^ anEnv body: (self application perform: anEnv handler)].
-		
-	^ anEnv body: (self application perform: anEnv handler withArguments: arguments).
+
+	arguments := (anEnv request url findTokens: '/') allButFirst asArray.
+	arguments
+		ifEmpty: [ response := (self application perform: anEnv handler). ]
+		ifNotEmpty: [ response := (self application perform: anEnv handler withArguments: arguments). ] .
+	self setCorrectBody: response in: anEnv.
