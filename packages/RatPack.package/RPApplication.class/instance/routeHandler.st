@@ -1,4 +1,4 @@
 routing
 routeHandler
 
-		^ self threadLocal: self class routeHandlerKey
+		^ self dynamicEnvironment handler

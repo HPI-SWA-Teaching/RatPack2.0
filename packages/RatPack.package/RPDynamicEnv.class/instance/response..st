@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 response: aValue
 	
-	self at: #rpResponse put: aValue.
+	self at: self class responseKey put: aValue.

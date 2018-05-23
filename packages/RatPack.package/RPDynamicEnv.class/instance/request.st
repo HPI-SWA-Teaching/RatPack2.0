@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 request
 	
-	^ self at: #rpRequest
+	^ self at: self class requestKey

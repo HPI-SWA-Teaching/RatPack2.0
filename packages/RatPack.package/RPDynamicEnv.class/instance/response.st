@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 response
 	
-	^ self at: #rpResponse
+	^ self at: self class responseKey

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 parsedRequestContents: aValue
 
-	self at: #rpParsedRequestContentsKey put: aValue.
+	self at: self class parsedRequestContentsKey put: aValue.

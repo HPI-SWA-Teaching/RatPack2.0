@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 request: aValue
 	
-	self at: #rpRequest put: aValue.
+	self at: self class requestKey put: aValue.

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 handler: aValue
 	
-	self at: #rpRouteHandler put: aValue.
+	self at: self class routeHandlerKey put: aValue.
