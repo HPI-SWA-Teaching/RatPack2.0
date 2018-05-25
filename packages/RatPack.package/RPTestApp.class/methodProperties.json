@@ -4,9 +4,10 @@
 		"contentDecoders" : "re 5/8/2018 17:55",
 		"globalMiddleware" : "lj 5/25/2018 15:27" },
 	"instance" : {
-		"blacklistedHandler" : "lj 5/25/2018 16:20",
+		"blacklistedHandler" : "lj 5/25/2018 19:40",
+		"handleRequestForChainOrder" : "lj 5/25/2018 19:04",
 		"handleRequestForIndex" : "re 5/9/2018 13:16",
-		"handleRequestForIndexWithMiddleware" : "lj 5/23/2018 23:46",
+		"handleRequestForIndexStopped" : "lj 5/25/2018 19:53",
 		"handleRequestForRedirect" : "LB 5/11/2015 11:15",
 		"handleRequestForSimpleJSON" : "jm 5/9/2018 13:09",
 		"indexHandlerCalled" : "5/15/2018 11:17:27",

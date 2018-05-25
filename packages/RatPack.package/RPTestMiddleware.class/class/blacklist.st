@@ -1,4 +1,4 @@
 as yet unclassified
 blacklist
 
-	^ #(#blacklistedHandler) asOrderedCollection
+	^ {'/blacklistedHandler'} asOrderedCollection 
