@@ -1,5 +1,5 @@
 test - middleware
 testMiddlewareCallChainInterrupt
 
-	RPTestHelper get: '/indexStopped' on: app.
+	RPTestHelper get: '/stopped' on: app.
 	self assert: app indexHandlerCalled equals: false.

@@ -21,7 +21,7 @@
 		"testJsonDecoder" : "re 5/15/2018 11:15",
 		"testLoadObjectsOnExternalDatabase" : "MF 7/14/2015 15:30",
 		"testMiddlewareBlacklist" : "lj 5/25/2018 19:50",
-		"testMiddlewareCallChainInterrupt" : "lj 5/25/2018 19:55",
+		"testMiddlewareCallChainInterrupt" : "lj 5/25/2018 20:59",
 		"testMiddlewareCallChainOrder" : "lj 5/25/2018 19:04",
 		"testMiddlewareInstanciation" : "lj 5/22/2018 15:14",
 		"testMiddlewarePreHookFalse" : "lj 5/25/2018 19:36",

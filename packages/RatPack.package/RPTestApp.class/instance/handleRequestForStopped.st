@@ -1,7 +1,7 @@
 routes
-handleRequestForIndexStopped
+handleRequestForStopped
 	
-	<get: '/indexStopped'>
+	<get: '/stopped'>
 	<middleware: #(#RPStoppingMiddleware) >
 	
 	indexHandlerCalled := true.
