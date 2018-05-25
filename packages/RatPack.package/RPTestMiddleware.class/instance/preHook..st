@@ -1,4 +1,5 @@
-as yet unclassified
+nil
 preHook: anEnv
 
-	
+	self incrementPreHookCounter: anEnv.
+	^ true

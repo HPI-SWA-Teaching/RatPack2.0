@@ -1,9 +1,9 @@
 routes
 handleRequestForIndexWithMiddleware
-	<get: '/index'>
-	<put: '/index'>
-	<post: '/index'>
-	<middleware: #(globalMiddleware RPTestMiddleware) >
+	<get: '/indexWithMiddleware'>
+	<put: '/indexWithMiddleware'>
+	<post: '/indexWithMiddleware'>
+	<middleware: #(#globalMiddleware #RPTestMiddlewareUppercase) >
 	
 	indexHandlerCalled := true.
 	

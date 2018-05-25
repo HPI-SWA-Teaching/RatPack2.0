@@ -1,4 +1,4 @@
 as yet unclassified
 globalMiddleware
 
-	^ #() asOrderedCollection
+	^ #(#RPTestMiddleware) asOrderedCollection

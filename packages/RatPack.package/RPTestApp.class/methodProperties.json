@@ -2,10 +2,11 @@
 	"class" : {
 		"appName" : "mm 7/14/2015 21:38",
 		"contentDecoders" : "re 5/8/2018 17:55",
-		"globalMiddleware" : "lj 5/21/2018 15:52" },
+		"globalMiddleware" : "lj 5/25/2018 15:27" },
 	"instance" : {
+		"blacklistedHandler" : "lj 5/25/2018 16:20",
 		"handleRequestForIndex" : "re 5/9/2018 13:16",
-		"handleRequestForIndexWithMiddleware" : "lj 5/22/2018 15:31",
+		"handleRequestForIndexWithMiddleware" : "lj 5/23/2018 23:46",
 		"handleRequestForRedirect" : "LB 5/11/2015 11:15",
 		"handleRequestForSimpleJSON" : "jm 5/9/2018 13:09",
 		"indexHandlerCalled" : "5/15/2018 11:17:27",

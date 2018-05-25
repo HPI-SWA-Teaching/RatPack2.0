@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"blacklist" : "lj 5/22/2018 15:20" },
+		"blacklist" : "lj 5/25/2018 16:09" },
 	"instance" : {
-		"postHook:" : "lj 5/22/2018 15:22",
-		"preHook:" : "lj 5/22/2018 15:21" } }
+		"incrementPostHookCounter:" : "lj 5/25/2018 15:14",
+		"incrementPreHookCounter:" : "lj 5/25/2018 15:11",
+		"postHook:" : "lj 5/25/2018 15:16",
+		"preHook:" : "lj 5/25/2018 15:12" } }

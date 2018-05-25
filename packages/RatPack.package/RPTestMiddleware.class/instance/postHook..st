@@ -1,6 +1,5 @@
 as yet unclassified
 postHook: anEnv
 
-	Transcript show: 'Test'
-
-	
+	self incrementPostHookCounter: anEnv.
+	^ true

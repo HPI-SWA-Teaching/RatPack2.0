@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "RPTestMiddleware",
+		"wordCount" ],
+	"name" : "RPWordCountMiddleware",
 	"pools" : [
 		 ],
-	"super" : "RPMiddleware",
+	"super" : "RPTestMiddleware",
 	"type" : "normal" }
