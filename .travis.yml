@@ -1,32 +1,26 @@
-language: erlang
+language: smalltalk
 sudo: false
+
+os:
+  - linux
+  - osx
+
+smalltalk:
+  - Squeak-trunk
+  - Squeak-5.1
+  - Squeak-4.6
 
 env:
   global:
-    - BASELINE=RatPack
     - EXCLUDE_CATEGORIES="Cryptography,PostgresV2"
-  matrix:
-    - SMALLTALK="Squeak4.6"
 
 addons:
   apt:
     packages:
-    # 32-bit VM
-    - libc6:i386
     # UUIDPlugin
     - libuuid1:i386
-  postgresql: "9.4"
+  postgresql: "9.5"
 
 before_install:
-   - psql -c "CREATE DATABASE squeakdb;" -U postgres
-   - psql -c "ALTER USER postgres WITH PASSWORD 'secret';" -U postgres
-
-install:
-   - export PROJECT_HOME="$(pwd)"
-   - cd $HOME
-   - wget -q -O filetreeCI.zip https://github.com/fniephaus/filetreeCI/archive/master.zip
-   - unzip -q filetreeCI.zip
-   - cd filetreeCI-*
-   - export FILETREE_CI_HOME="$(pwd)"
-
-script: $FILETREE_CI_HOME/run.sh
+  - psql -c "CREATE DATABASE squeakdb;" -U postgres
+  - psql -c "ALTER USER postgres WITH PASSWORD 'bird';" -U postgres
