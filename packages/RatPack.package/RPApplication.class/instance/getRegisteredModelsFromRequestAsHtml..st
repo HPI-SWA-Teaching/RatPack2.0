@@ -1,14 +1,14 @@
 endpoint
-getRegisteredModelsFromRequestAsHtml: aRoute
+getRegisteredModelsFromRequestAsHtml: aRPModelname
  
       | aRPModelClass aHtmlString subStrings |
-	aRPModelClass := self getModelForRoute: aRoute.
+	aRPModelClass := self getRegisteredModel: aRPModelname.
 	subStrings := OrderedCollection new.
 	aHtmlString :=  '<b>Model:</b> ',
-					aRPModelClass name,
+					aRPModelname,
 					'<br><b>Metadata:</b> {"dataTypes":{',
 					((aRPModelClass dataTypes associations collect: [:each |
 						each asJsonString]) joinSeparatedBy: ','),
 					'}}<br><br><b>Objects:</b>',
-					(self getRegisteredObjectsFromRequestAsHtml: aRoute).
+					(self getRegisteredObjectsFromRequestAsHtml: aRPModelname).
 	^ self sendHtml: aHtmlString
