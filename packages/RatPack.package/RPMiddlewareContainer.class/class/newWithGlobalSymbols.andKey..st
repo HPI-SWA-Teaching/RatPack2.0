@@ -1,5 +1,5 @@
-as yet unclassified
-newWith: aGlobalMiddleware andKey: aGlobalMiddlewareKey
+initialization
+newWithGlobalSymbols: aGlobalMiddleware andKey: aGlobalMiddlewareKey
 
 	| container |
 	container := self basicNew.

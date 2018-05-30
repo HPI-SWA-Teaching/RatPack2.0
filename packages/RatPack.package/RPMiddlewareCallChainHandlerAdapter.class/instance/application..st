@@ -1,4 +1,4 @@
 accessing
-application: anObject
+application: anApplication
 	
-	application := anObject.
+	application := anApplication.

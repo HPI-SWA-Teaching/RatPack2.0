@@ -1,4 +1,4 @@
 routing
-routeHandler: aValue
+routeHandler: aHandler
 
-		self dynamicEnvironment handler: aValue.
+		self dynamicEnvironment handler: aHandler.

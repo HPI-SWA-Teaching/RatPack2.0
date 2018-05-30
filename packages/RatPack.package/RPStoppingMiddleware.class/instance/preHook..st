@@ -1,4 +1,4 @@
-as yet unclassified
+interaction
 preHook: anEnv
 	
 	super preHook: anEnv.

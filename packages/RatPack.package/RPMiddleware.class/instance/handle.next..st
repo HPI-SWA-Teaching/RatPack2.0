@@ -1,4 +1,4 @@
-as yet unclassified
+accessing-default
 handle: anEnv next: aNext
 	
 	(self isUrlBlacklisted: anEnv request url)

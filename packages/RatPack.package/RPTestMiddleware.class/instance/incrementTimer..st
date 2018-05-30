@@ -1,6 +1,6 @@
-as yet unclassified
+interaction
 incrementTimer: anEnv
 
-	anEnv at: #timer
-		ifPresent: [ :timer | anEnv at: #timer put: timer +1]
+	anEnv at: #time
+		ifPresent: [ :time | anEnv at: #time put: time +1]
 		ifAbsentPut: [ 1 ].

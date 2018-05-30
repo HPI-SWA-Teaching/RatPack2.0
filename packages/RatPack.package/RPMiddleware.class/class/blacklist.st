@@ -1,6 +1,6 @@
-as yet unclassified
+constants
 blacklist
 
-	"Returns a collection of regex which handlers shall not to use the middleware"
+	"Returns a collection of regular expressions. The middleware will not be executed for a request where the route matches any of these expresseions."
 	^ {} asOrderedCollection.
 	

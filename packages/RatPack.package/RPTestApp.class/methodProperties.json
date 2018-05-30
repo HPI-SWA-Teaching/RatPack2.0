@@ -5,6 +5,7 @@
 		"globalMiddleware" : "lj 5/25/2018 15:27" },
 	"instance" : {
 		"blacklistedHandler" : "lj 5/25/2018 19:40",
+		"handleRequestForAutoGlobalMiddleware" : "lj 5/30/2018 14:31",
 		"handleRequestForChainOrder" : "lj 5/25/2018 20:58",
 		"handleRequestForIndex" : "re 5/9/2018 13:16",
 		"handleRequestForRedirect" : "LB 5/11/2015 11:15",

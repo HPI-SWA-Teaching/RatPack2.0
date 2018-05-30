@@ -1,4 +1,4 @@
 accessing
 parsedRequestContents
 
-	^ self at: self class parsedRequestContentsKey
+	^ self at: self class parsedRequestContents

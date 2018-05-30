@@ -1,4 +1,4 @@
-as yet unclassified
+interaction
 isUrlBlacklisted: anUrl
 
 	self class blacklist
