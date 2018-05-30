@@ -5,14 +5,13 @@ os:
   - linux
   - osx
 
-smalltalk:
-  - Squeak-trunk
-  - Squeak-5.1
-  - Squeak-4.6
-
 env:
   global:
     - EXCLUDE_CATEGORIES="Cryptography,PostgresV2"
+
+smalltalk:
+  - Squeak-5.1
+  - Squeak-5.0
 
 addons:
   apt:

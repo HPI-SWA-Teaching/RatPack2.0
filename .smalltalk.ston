@@ -5,11 +5,12 @@ SmalltalkCISpec {
       #platforms : [ #squeak ],
       #directory : 'packages',
       #load : [ 'TravisCI' ]
-  }
-],
-#testing: {
-  #packages: [ 'RatPack.*' ],
-  #coverage : {
-    #categories: [ 'RatPack-*' ]
+    }
+  ],
+  #testing: {
+    #packages: [ 'RatPack.*' ],
+    #coverage : {
+      #categories: [ 'RatPack-*' ]
+    }
   }
 }

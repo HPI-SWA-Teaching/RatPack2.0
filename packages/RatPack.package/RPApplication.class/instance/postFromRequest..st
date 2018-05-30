@@ -1,9 +1,8 @@
 object handling
 postFromRequest: aRPModelname
 	
-	| jsonString aRPModelClass|
+	| jsonString aRPModelClass responseId |
 	aRPModelClass := self getRegisteredModel: aRPModelname.
-	jsonString := (self threadLocal: RPApplication requestKey) rawPostContents.
-	self persistObjectBy: jsonString from: aRPModelClass.
-	
-	
+	jsonString := self request rawPostContents.
+	responseId := self persistObjectBy: jsonString from: aRPModelClass.
+	^ self getObjectFromRequest: aRPModelname with: responseId.
