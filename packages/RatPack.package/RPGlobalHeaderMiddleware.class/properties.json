@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"forceCorrectContentDecoding",
-		"globalHeaders" ],
-	"name" : "RPSettings",
+		 ],
+	"name" : "RPGlobalHeaderMiddleware",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RPMiddleware",
 	"type" : "normal" }
