@@ -1,4 +1,4 @@
 accessing
-contentType: aString
+contentType: aStringOrBlock
 
-	self response contentType: aString.
+	self response contentType: (aStringOrBlock value).

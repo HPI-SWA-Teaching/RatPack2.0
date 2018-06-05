@@ -1,6 +1,8 @@
 accessing
-status: aSymbolOrInteger
+status: aSymbolOrIntegerOrBlock
 
-	self response status: (aSymbolOrInteger isSymbol
-		ifTrue: [aSymbolOrInteger]
-		ifFalse: [HttpResponse statusSymbolFor: aSymbolOrInteger]).
+	| evaluatedStatus |
+	evaluatedStatus := aSymbolOrIntegerOrBlock value.
+	self response status: (evaluatedStatus isSymbol
+		ifTrue: [evaluatedStatus]
+		ifFalse: [HttpResponse statusSymbolFor: evaluatedStatus]).

@@ -1,4 +1,4 @@
 accessing
-addCookies: aCollection
+addCookies: aCollectionOrBlock
 	
-	^ self response addCookies: aCollection
+	^ self response addCookies: (aCollectionOrBlock value).

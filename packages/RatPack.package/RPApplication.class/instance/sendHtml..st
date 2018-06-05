@@ -5,4 +5,4 @@ sendHtml: aHtmlString
 		status: 200;
 		contentType: 'text/html';
 		body:  aHtmlString contents;
-		headersAt: #server put: self name.
+		headersAt: 'server' put: self name.
