@@ -4,4 +4,4 @@ initialize
 	super initialize.
 	
 	indexHandlerCalled := false.
-	self settings globalHeaders: {'date' -> [ TimeStamp now asString. ] . 'global-headers-work' -> 'true' } asDictionary.
+	self settings globalHeaders: RPTestHelper getExampleGlobalHeaders.
