@@ -1,9 +1,9 @@
 object handling
 getObjectFromRequest: aRPModelname with: anID
 
-      | modelObject aRPModelClass|
-	aRPModelClass := self getRegisteredModel: aRPModelname.
-	[modelObject := self database loadModelObject: anID from: aRPModelClass] 
-		on: Warning do: [^ self objectNotFound].
+	| modelObject aRPModelClass |
 
-       ^ self sendJson: (modelObject asJson)
+	aRPModelClass := self getRegisteredModel: aRPModelname.
+	[ modelObject := self database loadModelObject: (anID asNumber) from: aRPModelClass] 
+		on: Warning do: [^ self objectNotFound].
+	^ self sendJson: (modelObject asJson)
