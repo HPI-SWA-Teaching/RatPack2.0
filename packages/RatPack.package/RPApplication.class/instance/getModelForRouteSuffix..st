@@ -1,4 +1,4 @@
 model handling
-getModelForRoute: aRouteSuffix
+getModelForRouteSuffix: aRouteSuffix
 
 	^ self defaultRoutesModelLookupTable at: aRouteSuffix.

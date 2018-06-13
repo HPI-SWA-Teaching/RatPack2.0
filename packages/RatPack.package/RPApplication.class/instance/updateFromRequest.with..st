@@ -1,9 +1,9 @@
 object handling
-updateFromRequest: aRoute with: anId
+updateFromRequest: aRouteSuffix with: anId
  
     | updatedObject jsonString aRPModelClass|
-	aRPModelClass := self getModelForRoute: aRoute.
+	aRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
 	jsonString := self request rawPutContents.
 	updatedObject := aRPModelClass createObject: jsonString.
 	self database update: updatedObject with: anId from: aRPModelClass.
-	^ self getObjectFromRequest: aRoute with: anId
+	^ self getObjectFromRequest: aRouteSuffix with: anId

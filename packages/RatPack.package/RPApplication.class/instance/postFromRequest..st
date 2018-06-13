@@ -1,8 +1,8 @@
 object handling
-postFromRequest: aRoute
+postFromRequest: aRouteSuffix
 
 	| jsonString aRPModelClass responseId |
-	aRPModelClass := self getModelForRoute: aRoute.
+	aRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
 	jsonString := self request rawPostContents.
 	responseId := self persistObjectBy: jsonString from: aRPModelClass.
-	^ self getObjectFromRequest: aRoute with: responseId.
+	^ self getObjectFromRequest: aRouteSuffix with: responseId.
