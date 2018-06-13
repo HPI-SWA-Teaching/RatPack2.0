@@ -1,4 +1,4 @@
 routes
 handleRequestForManySlashes
-	<get: '/thisDoesExist/butDontTakeArguments/even/with/many/Slashes'>
+	<get: '/thisDoesExist/butDoesntTakeArguments/even/with/many/Slashes'>
 	

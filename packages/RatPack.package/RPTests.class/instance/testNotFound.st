@@ -6,5 +6,5 @@ testNotFound
 	self assert: result status = #notFound.
 	self assert: result contentType = 'text/html'.
 	
-	RPTestHelper get: '/thisDoesNotExist/(.*)/andCaptureGroupsInURLDontMakeProblem' on: app.
+	RPTestHelper get: '/thisDoesNotExist/(.*)/andCaptureGroupsInUrl/AreNoProblem' on: app.
 	self assert: app response status = #notFound.
