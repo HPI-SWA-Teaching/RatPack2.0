@@ -3,10 +3,10 @@ testDefaultRouteNameInModel
 
 	| routeName |
 
-	app registerModel: RPTestModelWithRouteName.
+	app registerModel: RPTestModel.
 	
-	routeName := RPApplication apiRoutePrefix, RPTestModelWithRouteName defaultRoute.
+	routeName := RPApplication apiRoutePrefix, RPTestModel defaultRoute.
 	self testDefaultApiRoutesFor: routeName.
 	
-	routeName := RPApplication htmlRoutePrefix, RPTestModelWithRouteName defaultRoute.
+	routeName := RPApplication htmlRoutePrefix, RPTestModel defaultRoute.
 	self testDefaultHtmlRoutesFor: routeName.
