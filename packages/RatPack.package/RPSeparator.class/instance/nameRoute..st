@@ -1,17 +1,9 @@
-as yet unclassified
+routing
 nameRoute: aClassName
 
-	| char separatorPositions nextChar secondNextChar routeName lastSeparatorPosition |
+	| separatorPositions routeName lastSeparatorPosition |
 
-	separatorPositions := OrderedCollection new.
-	1 to: aClassName size do: [ :index | 
-		char := aClassName at: index.
-		(index + 2 <= aClassName size ) ifTrue: [
-			nextChar := (aClassName at: (index + 1)) asCharacter.
-			secondNextChar := (aClassName at: (index + 2)) asCharacter.
-			((nextChar isUppercase and: [ secondNextChar isLowercase. ]) or: 
-			(nextChar isUppercase and: [ secondNextChar isUppercase and: [char isLowercase ]] )) ifTrue: [
-				separatorPositions add: index. ]. ]. ].
+	separatorPositions := self findSeparatorPositionsFor: aClassName.
 		
 	routeName := ''.
 	lastSeparatorPosition := 1.

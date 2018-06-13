@@ -1,4 +1,4 @@
 as yet unclassified
 routeNamingStrategies 
 
-	^ OrderedCollection newFrom: { RPTestRouteNamingStrategy new. }.
+	^ { RPTestRouteNamingStrategy new. } asOrderedCollection

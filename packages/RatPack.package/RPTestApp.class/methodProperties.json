@@ -3,7 +3,7 @@
 		"appName" : "mm 7/14/2015 21:38",
 		"contentDecoders" : "re 5/8/2018 17:55",
 		"globalMiddleware" : "lj 6/5/2018 15:17" },
-		"routeNamingStrategies" : "jm 5/23/2018 14:58" },
+		"routeNamingStrategies" : "jm 6/13/2018 14:03" },
 	"instance" : {
 		"blacklistedHandler" : "lj 5/25/2018 19:40",
 		"handleRequestForAutoGlobalMiddleware" : "lj 5/30/2018 14:31",
