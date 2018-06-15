@@ -3,7 +3,7 @@ testGetModelInstance
  
 	| url idUrl result testJson |
       app registerModel: RPTestModel.
-      url := '/api/', (RPTestModel name).
+      url := app createDefaultRouteFor: RPTestModel withPrefix: (app class apiRoutePrefix). 
 	testJson := RPTestHelper getExampleJson.
       RPTestHelper post: url on: app content: testJson.
       idUrl := url, '/1'.

@@ -3,7 +3,7 @@ testPost
 	
 	| url testJson |
 	app registerModel: RPTestModel.
-	url := app class apiRoutePrefix, (RPTestModel name).
+	url := app createDefaultRouteFor: RPTestModel withPrefix: (app class apiRoutePrefix).
 	testJson := RPTestHelper getExampleJson.
 	RPTestHelper post: url on: app content: testJson.
 	self assert: (RPTestModel createJsonFor: 

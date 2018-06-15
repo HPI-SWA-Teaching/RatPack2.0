@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Testing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPTestModelWithoutRouteName",
+	"pools" : [
+		 ],
+	"super" : "RPTestModel",
+	"type" : "normal" }
