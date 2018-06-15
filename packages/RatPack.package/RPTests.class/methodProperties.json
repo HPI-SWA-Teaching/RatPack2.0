@@ -34,6 +34,7 @@
 		"testPostReturningNewObject" : "lj 5/16/2018 14:58",
 		"testPut" : "lj 5/16/2018 14:58",
 		"testPutReturningUpdatedObject" : "lj 5/16/2018 14:58",
+		"testPutWithIncompleJson" : "cs 6/15/2018 16:23",
 		"testRedirect" : "LB 7/15/2015 19:56",
 		"testRegisterModelClass" : "MF 7/7/2015 09:48",
 		"testRemoveModelClass" : "MF 7/7/2015 10:24",
