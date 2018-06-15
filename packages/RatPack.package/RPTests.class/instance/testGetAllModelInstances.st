@@ -3,7 +3,7 @@ testGetAllModelInstances
 
 	| url result testJson testJson2 |
 	app registerModel: RPTestModel.
-	url := app class apiRoutePrefix, (RPTestModel name).
+	url := app createDefaultRouteFor: RPTestModel withPrefix: (app class apiRoutePrefix).
 	testJson := RPTestHelper getExampleJson.
 	testJson2 := RPTestHelper getOtherExampleJson.
 	RPTestHelper post: url on: app content: testJson.
