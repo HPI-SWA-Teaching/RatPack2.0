@@ -3,7 +3,7 @@ testPutWithIncompleJson
 	
 	| url urlId putResult postResult testJson incompleteTestJson resultTestJson |
 	app registerModel: RPTestModel.
-	url := app class apiRoutePrefix, (RPTestModel name).
+	url := app class apiRoutePrefix, (RPTestModel defaultRoute).
 	testJson := RPTestHelper getExampleJson.
 	incompleteTestJson := RPTestHelper getExampleIncompleteJson.
 	resultTestJson := '{"salary":42,"name":"Tim Tester"}'.
