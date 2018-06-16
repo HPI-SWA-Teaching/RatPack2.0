@@ -1,9 +1,11 @@
 endpoint
-writeRegisteredObjectsFromGetRequest: aRPModelname
+writeRegisteredObjectsFromGetRequest: aRouteSuffix
  
-      | modelObjects string aRPModelClass |
-	aRPModelClass := self getRegisteredModel: aRPModelname.
-      modelObjects := self database loadModelObjectsOf: aRPModelClass.  
+    | modelObjects string aRPModelClass |
+	
+	aRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
+    modelObjects := self database loadModelObjectsOf: aRPModelClass.  
 	string := '{"data":[', ((modelObjects collect: [:each |
 		each asJson]) joinSeparatedBy: ','), ']}'.
   	self sendJson: string
+
