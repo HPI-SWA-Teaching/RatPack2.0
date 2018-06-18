@@ -1,11 +1,10 @@
 object handling
 updateFromRequest: aRouteSuffix with: anId
 
-	| updatedObject jsonString aRPModelClass objectFromDatabase |
+	| updatedObject aRPModelClass objectFromDatabase |
 	
 	aRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
-	jsonString := self request rawPutContents.
-	objectFromDatabase := self database loadModelObject: (anId asNumber) from: aRPModelClass.
-	updatedObject := aRPModelClass updateObject: objectFromDatabase object withJson: jsonString.
+	objectFromDatabase := (self database loadModelObject: (anId asNumber) from: aRPModelClass ) object.
+	updatedObject := aRPModelClass getUpdatedObject: objectFromDatabase withJson: self request rawPutContents.
 	self database update: updatedObject with: anId from: aRPModelClass.
 	^ self getObjectFromRequest: aRouteSuffix with: anId
