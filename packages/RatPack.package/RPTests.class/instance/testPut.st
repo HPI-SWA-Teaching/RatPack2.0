@@ -3,7 +3,7 @@ testPut
 	
 	| url urlId putResult postResult testJson otherTestJson|
 	app registerModel: RPTestModel.
-	url := app class apiRoutePrefix, (RPTestModel name).
+	url := app class apiRoutePrefix, (RPTestModel defaultRoute).
 	testJson := RPTestHelper getExampleJson.
 	otherTestJson := RPTestHelper getOtherExampleJson.
 	urlId := url, '/1'.
@@ -12,4 +12,3 @@ testPut
 		
 	self assert: ((postResult contents contents) ~= (putResult contents contents)).
 	self assert: ((putResult contents contents) includesSubString: otherTestJson).
-	

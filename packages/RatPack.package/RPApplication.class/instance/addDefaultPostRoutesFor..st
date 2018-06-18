@@ -2,6 +2,7 @@ model handling
 addDefaultPostRoutesFor: anRPModelClass
 	
 	| apiUrl |
-	apiUrl := self class apiRoutePrefix, '(', anRPModelClass name, ')'.
+
+	apiUrl := self createDefaultRouteFor: anRPModelClass withPrefix: (self class apiRoutePrefix).
 	(self routesFor: #post:) add: (apiUrl -> #'postFromRequest:').
 	

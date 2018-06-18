@@ -3,4 +3,8 @@ initializeRoutes
 
 	routes := IdentityDictionary new.
 	self initializePragmaRoutes.
-	self initializeEndpointRoutes 	
+	self initializeEndpointRoutes. 	
+		
+	self defaultRoutesModelLookupTable: Dictionary new.
+	
+	
