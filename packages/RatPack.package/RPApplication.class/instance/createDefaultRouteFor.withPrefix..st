@@ -7,7 +7,7 @@ createDefaultRouteFor: anRPModelClass withPrefix: aPrefix
 		ifFalse: [ routeSuffix := self createRouteSuffixFor: anRPModelClass ].
 	self defaultRoutesModelLookupTable at: routeSuffix put: anRPModelClass.
 	
-	url := aPrefix, routeSuffix.
+	url := aPrefix, '(', routeSuffix ,')'.
 	^ url
 	
 	

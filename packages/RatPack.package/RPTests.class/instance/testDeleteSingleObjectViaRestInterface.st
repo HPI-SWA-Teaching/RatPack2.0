@@ -4,7 +4,7 @@ testDeleteSingleObjectViaRestInterface
 	| url idUrl result |
 	app database: RPPostgreSQLAdapter new.
 	app registerModel: RPTestModel.
-	url := app createDefaultRouteFor: RPTestModel withPrefix: (app class apiRoutePrefix).
+	url :=  '/api/routeName'.
 	RPTestHelper post: url on: app content: RPTestHelper getExampleJson.
 	self assert: (app database loadModelObject: 1 from: RPTestModel) notNil.
   
