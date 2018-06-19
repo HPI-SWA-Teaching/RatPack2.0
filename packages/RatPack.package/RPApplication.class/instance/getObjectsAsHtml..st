@@ -1,5 +1,5 @@
 endpoint
-getRegisteredObjectsFromRequestAsHtml: aRPModelname
+getObjectsAsHtml: aRPModelname
  
       | objectString objects |
 	objectString := ''.
