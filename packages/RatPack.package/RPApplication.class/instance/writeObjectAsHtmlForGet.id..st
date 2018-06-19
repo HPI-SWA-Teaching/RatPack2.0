@@ -1,5 +1,5 @@
 endpoint
-writeObjectFromGetRequestAsHtml: aRPModelname with: anID
+writeObjectAsHtmlForGet: aRPModelname id: anID
 
       | modelObject aHtmlString aRPModelClass |
 	aHtmlString := '<html><head></head><body><h3>Object-ID: ', anID, '</h3>'.

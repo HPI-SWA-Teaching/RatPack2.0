@@ -14,6 +14,6 @@ removeObject
 	id := (self createListOf: numbers 
 			    with: (self selectedApplication database modelDictionary at: aRPModelClass) keys) 
 			ifNil: [^ self cancel].
-	self selectedApplication deleteFromRequest: aRPModelClass asSymbol with: id .
+	self selectedApplication writeDeletedObject: aRPModelClass asSymbol id: id .
 	self change
 	

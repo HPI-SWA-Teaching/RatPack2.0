@@ -1,5 +1,5 @@
 endpoint
-writeRegisteredObjectsFromGetRequestAsHtml: aRPModelname
+writeObjectsAsHtmlForGet: aRPModelname
  
       | objectString objects |
 	objectString := ''.

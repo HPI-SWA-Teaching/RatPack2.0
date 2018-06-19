@@ -1,5 +1,5 @@
 endpoint
-writeRegisteredObjectsFromGetRequest: aRouteSuffix
+writeObjectsForGet: aRouteSuffix
  
     | modelObjects string aRPModelClass |
 	

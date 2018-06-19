@@ -1,5 +1,5 @@
 endpoint
-writeRegisteredModelsFromGetRequestAsHtml: aRPModelname
+writeModelsAsHtmlForGet: aRPModelname
  
       | aRPModelClass aHtmlString subStrings |
 	aRPModelClass := self getRegisteredModel: aRPModelname.
@@ -10,5 +10,5 @@ writeRegisteredModelsFromGetRequestAsHtml: aRPModelname
 					((aRPModelClass dataTypes associations collect: [:each |
 						each asJsonString]) joinSeparatedBy: ','),
 					'}}<br><br><b>Objects:</b>',
-					(self writeRegisteredObjectsFromGetRequestAsHtml: aRPModelname).
+					(self writeObjectsAsHtmlForGet: aRPModelname).
 	self sendHtml: aHtmlString

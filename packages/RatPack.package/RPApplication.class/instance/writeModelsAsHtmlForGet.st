@@ -1,5 +1,5 @@
 endpoint
-writeAllModelsFromGetRequestAsHtml
+writeModelsAsHtmlForGet
 
 	 self sendHtml: ('<!DOCTYPE html><html><head></head><body><h3>Models:</h3>', 
 			((self modelClasses asOrderedCollection collect: [:each |

@@ -4,6 +4,6 @@ addDefaultHtmlGetRoutesFor: anRPModelClass
 	| htmlUrl |
 
 	htmlUrl := self createDefaultRouteFor: anRPModelClass withPrefix: self class htmlRoutePrefix. 
-	(self routesFor: #get:) add: ((htmlUrl, self class wildcard) -> #'writeObjectFromGetRequestAsHtml:with:').
-	(self routesFor: #get:) add: (htmlUrl -> #'writeRegisteredModelsFromGetRequestAsHtml:')
+	(self routesFor: #get:) add: ((htmlUrl, self class wildcard) -> #writeObjectAsHtmlForGet:id:).
+	(self routesFor: #get:) add: (htmlUrl -> #writeModelsAsHtmlForGet:)
 	

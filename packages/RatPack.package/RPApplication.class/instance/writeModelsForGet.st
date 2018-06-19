@@ -1,5 +1,5 @@
 object handling
-writeAllModelsFromGetRequest
+writeModelsForGet
 
 	| aJsonString |
 	aJsonString := '{"models":[',

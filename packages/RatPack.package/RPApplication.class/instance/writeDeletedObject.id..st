@@ -1,7 +1,7 @@
 object handling
-deleteFromRequest: aRouteSuffix with: anId
+writeDeletedObject: aRouteSuffix id: anID
 	
 	| anRPModelClass |
 	anRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
-	self database deleteObject: anId from: anRPModelClass
+	self database deleteObject: anID from: anRPModelClass
 	
