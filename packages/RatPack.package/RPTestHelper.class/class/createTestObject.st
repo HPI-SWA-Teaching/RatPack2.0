@@ -1,4 +1,4 @@
 http requests
 createTestObject
 
-	^ RPTestModel createObject: self getExampleJson. 
+	^ RPTestModel createObject: RPTestModel fullJson. 
