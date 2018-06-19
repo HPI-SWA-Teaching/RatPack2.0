@@ -1,8 +1,14 @@
 endpoint
 writeObjectsAsHtmlForGet: aRPModelname
  
-      | objectString objects |
-	objectString := ''.
-      objects := self database loadModelObjectsOf: (self getRegisteredModel: aRPModelname).
-      self body: (objects collect: [:each |
-               '<br>ID: <a href="/html/', (aRPModelname), '/', (each metadata at: #id), '">',  (each metadata at: #id), '</a>']) join
+      | aRPModelClass aHtmlString subStrings |
+	aRPModelClass := self getRegisteredModel: aRPModelname.
+	subStrings := OrderedCollection new.
+	aHtmlString :=  '<b>Model:</b> ',
+					aRPModelname,
+					'<br><b>Metadata:</b> {"dataTypes":{',
+					((aRPModelClass dataTypes associations collect: [:each |
+						each asJsonString]) joinSeparatedBy: ','),
+					'}}<br><br><b>Objects:</b>',
+					(self getObjectsAsHtml: aRPModelname).
+	self sendHtml: aHtmlString

@@ -1,5 +1,5 @@
 object handling
-writeDeletedObject: aRouteSuffix id: anID
+writeRemovedObjectForDelete: aRouteSuffix id: anID
 	
 	| anRPModelClass |
 	anRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
