@@ -3,7 +3,7 @@ testAddObject
 	
 	| object |
 	app registerModel: RPTestModel.
-	object := RPTestModel createObject: RPTestHelper getExampleJson.
+	object := RPTestModel createObject: RPTestModel fullJson.
 	app database persist: object from: RPTestModel.
-	self assert: RPTestHelper getExampleJson 
+	self assert: RPTestModel fullJson 
 		 equals: (RPTestModel createJsonFor: (RPTestHelper load: 1 on: app) object).

@@ -1,9 +1,9 @@
 {
 	"class" : {
 		"check:at:for:" : "MF 6/8/2015 11:50",
-		"createObjects:of:" : "LB 7/15/2015 01:28",
-		"createTestObject" : "LB 7/15/2015 19:48",
-		"createTestObjects:" : "LB 7/12/2015 22:37",
+		"createObjects:of:" : "ni 6/19/2018 17:13",
+		"createTestObject" : "ni 6/19/2018 17:13",
+		"createTestObjects:" : "ni 6/19/2018 17:14",
 		"delete:on:" : "PK 6/21/2015 16:05",
 		"delete:on:content:" : "PK 6/21/2015 16:02",
 		"delete:on:headers:" : "LB 7/13/2015 01:00",
@@ -12,9 +12,6 @@
 		"get:on:headers:" : "tfel 2/27/2012 10:46:29.45",
 		"getExampleEnvironment" : "lj 6/6/2018 14:44",
 		"getExampleGlobalHeaders" : "lj 6/6/2018 14:59",
-		"getExampleIncompleteJson" : "cs 6/15/2018 16:20",
-		"getExampleJson" : "LB 7/12/2015 21:19",
-		"getOtherExampleJson" : "MF 7/14/2015 19:03",
 		"httpRequestFor:method:headers:content:" : "tfel 2/27/2012 14:46:24.232",
 		"insertObjects:of:into:" : "LB 7/13/2015 00:15",
 		"load:on:" : "MF 7/14/2015 15:30",

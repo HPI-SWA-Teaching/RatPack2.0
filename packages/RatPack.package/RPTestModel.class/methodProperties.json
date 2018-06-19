@@ -4,7 +4,10 @@
 		"defaultRoute" : "jm 6/13/2018 15:08",
 		"defaultValues" : "pk 7/12/2015 21:38",
 		"foreignKeys" : "LB 7/15/2015 00:19",
+		"fullJson" : "ni 6/19/2018 17:13",
+		"otherFullJson" : "ni 6/19/2018 17:13",
 		"overridesDefaultRoute" : "jm 6/13/2018 15:08",
+		"partialJson" : "ni 6/19/2018 17:15",
 		"refClass" : "MF 7/6/2015 18:40",
 		"tableName" : "MF 7/7/2015 09:54" },
 	"instance" : {
