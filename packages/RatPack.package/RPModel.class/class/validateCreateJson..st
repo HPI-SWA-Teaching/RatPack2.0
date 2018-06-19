@@ -1,5 +1,5 @@
 validation
-validateJson: aJson
+validateCreateJson: aJson
 	| allAttributes jsonObject givenAttributes attributesWithDefault |
 	jsonObject := Json readFrom: (ReadStream on: aJson from: 1 to: (aJson size)).
 
