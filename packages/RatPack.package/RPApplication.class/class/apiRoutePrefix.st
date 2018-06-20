@@ -1,4 +1,0 @@
-constants
-apiRoutePrefix
-
-	^ '/api/'

@@ -1,7 +1,7 @@
-constants
+accessing
 errorPage
 
-	^ '<!DOCTYPE html>
+	^ self getValueFor: #errorPage default: [ '<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -258,3 +258,4 @@ enabled the <code>deployment</code> mode.</p>
 </div> <!-- /WRAP -->
 </body>
 </html>'
+]

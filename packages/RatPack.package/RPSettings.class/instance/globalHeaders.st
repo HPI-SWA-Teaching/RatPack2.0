@@ -1,4 +1,4 @@
 accessing
 globalHeaders
 
-	^ globalHeaders ifNil: [ Dictionary new. ]
+	^ self getValueFor: #globalHeaders default: [ Dictionary new ]

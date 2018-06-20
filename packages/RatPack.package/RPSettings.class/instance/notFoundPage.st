@@ -1,7 +1,7 @@
-constants
+accessing
 notFoundPage
 
-	 ^ '<!DOCTYPE html>
+	 ^ self getValueFor: #notFoundPage default: [ '<!DOCTYPE html>
 <html>
 <head>
 <style type="text/css">
@@ -92,3 +92,4 @@ self request method asLowercase
 <% ]. %>
 </body>
 </html>'
+]

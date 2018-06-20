@@ -3,7 +3,7 @@ testPut
 	
 	| url urlId putResult postResult testJson otherTestJson|
 	app registerModel: RPTestModel.
-	url := app class apiRoutePrefix, (RPTestModel defaultRoute).
+	url := app settings apiRoutePrefix, (RPTestModel defaultRoute).
 	testJson := RPTestModel fullJson.
 	otherTestJson := RPTestModel otherFullJson.
 	urlId := url, '/1'.

@@ -3,7 +3,7 @@ testPutReturningUpdatedObject
 	
 	| url urlId putResult getResult |
 	app registerModel: RPTestModel.
-	url := app class apiRoutePrefix, (RPTestModel defaultRoute).
+	url := app settings apiRoutePrefix, (RPTestModel defaultRoute).
 	
 	urlId := url, '/1'.
 	RPTestHelper post: url on: app content: RPTestModel fullJson.
