@@ -1,4 +1,4 @@
 private-accessing
 globalMiddlewareKey
 
-	^ globalMiddlewareKey
+	^ self settings globalMiddlewareKey

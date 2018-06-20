@@ -2,7 +2,6 @@ initialization
 newWithApplication: anApplication
 
 	| middlewareAdapter |
-	middlewareAdapter := self basicNew.
-	middlewareAdapter initialize.
+	middlewareAdapter := self new.
 	middlewareAdapter application: anApplication.
 	^ middlewareAdapter 

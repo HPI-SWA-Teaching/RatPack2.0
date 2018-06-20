@@ -1,4 +1,4 @@
-test - decoding
+test - decoding middleware
 testStrictCorrectContentDecoding
 	
 	app settings forceCorrectContentDecoding: true.

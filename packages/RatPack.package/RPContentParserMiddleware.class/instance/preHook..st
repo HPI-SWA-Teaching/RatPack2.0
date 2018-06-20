@@ -1,13 +1,18 @@
-as yet unclassified
+interaction
 preHook: anEnvironment
-
-	| request method |
+	
+	| request decoder result |
 	request := anEnvironment request.
-	method := request method asLowercase asSymbol.
 	
 	[
-		(method = #put) ifTrue: [ self decodeContent: request rawPutContents type: request contentType. ].
-		(method = #post) ifTrue: [ self decodeContent: request rawPostContents type: request contentType. ].
+		(self shouldProcessRequest: request)
+		ifTrue: [
+			decoder := self getDecoderForRequest: request fromDecoders: anEnvironment settings contentDecoders.
+			result := self getDecoderResultFrom: decoder forRequest: request.
+			anEnvironment parsedRequestContents: result.
+		]
 	] on: Error do: [ :sig |
 		anEnvironment parsedRequestContents: nil.
-		self settings forceCorrectContentDecoding ifTrue: [ ^ sig pass ] ifFalse: [ ^ sig return ] ].
+		anEnvironment settings forceCorrectContentDecoding ifTrue: [ ^ sig pass ] ifFalse: [ ^ sig return ] ].
+	
+	^ true

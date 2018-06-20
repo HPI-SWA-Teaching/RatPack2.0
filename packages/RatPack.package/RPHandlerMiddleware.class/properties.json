@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"application" ],
-	"name" : "RPMiddlewareCallChainHandlerAdapter",
+	"name" : "RPHandlerMiddleware",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RPMiddleware",
 	"type" : "normal" }

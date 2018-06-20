@@ -1,4 +1,4 @@
 accessing
 globalMiddleware 
 
-	^ self getValueFor: #globalMiddleware default: [ #() asOrderedCollection ]
+	^ self getValueFor: #globalMiddleware default: [ #( #RPContentParserMiddleware ) asOrderedCollection ]

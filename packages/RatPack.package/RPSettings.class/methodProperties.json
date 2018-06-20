@@ -15,7 +15,7 @@
 		"getValueFor:default:" : "re 6/20/2018 21:23",
 		"globalHeaders" : "re 6/20/2018 20:51",
 		"globalHeaders:" : "re 6/20/2018 21:05",
-		"globalMiddleware" : "re 6/20/2018 20:51",
+		"globalMiddleware" : "re 6/20/2018 22:06",
 		"globalMiddleware:" : "re 6/20/2018 21:04",
 		"globalMiddlewareKey" : "re 6/20/2018 21:05",
 		"globalMiddlewareKey:" : "re 6/20/2018 21:05",
@@ -30,4 +30,4 @@
 		"routeNamingStrategies:" : "re 6/20/2018 21:07",
 		"serverStart" : "re 6/20/2018 20:59",
 		"serverStop" : "re 6/20/2018 20:59",
-		"setValue:for:requireSafe:" : "re 6/20/2018 21:23" } }
+		"setValue:for:requireSafe:" : "re 6/20/2018 21:48" } }

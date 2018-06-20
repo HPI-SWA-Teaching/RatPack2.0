@@ -1,4 +1,4 @@
-test - decoding
+test - decoding middleware
 testCorrectContentDecoding
 	
 	RPTestHelper put: '/index' on: app headers: (Dictionary newFrom: {'Content-Type' -> 'test/contenttype'}) content: ''.
