@@ -2,6 +2,7 @@ test - routing
 testError
 
 	| result |
+	app setDeploymentMode.
 	result := RPTestHelper get: '/raiseError' on: app.
 	self assert: (result contents contents includesSubString: 'My test error').
 	self assert: result status =  #serverError.
