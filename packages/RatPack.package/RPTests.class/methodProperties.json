@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jm 6/13/2018 16:22",
+		"setUp" : "jm 6/20/2018 13:58",
 		"tearDown" : "mm 7/14/2015 21:38",
-		"testCaptureGroups" : "lj 6/13/2018 17:44",
 		"testAddObject" : "ni 6/19/2018 17:15",
+		"testCaptureGroups" : "lj 6/13/2018 17:44",
 		"testConvertModelClassToSQLString" : "LB 7/12/2015 21:31",
 		"testCorrectContentDecoding" : "re 5/9/2018 15:03",
 		"testCreateTableWithExternalDatabase" : "LB 7/12/2015 22:27",
@@ -17,7 +17,7 @@
 		"testDeleteObjectOnExternalDatabase" : "lj 5/7/2018 12:17",
 		"testDeleteSingleObjectViaRestInterface" : "ni 6/19/2018 17:14",
 		"testDropTableOnExternalDatabase" : "LB 7/12/2015 22:22",
-		"testError" : "LB 7/4/2015 14:14",
+		"testError" : "jm 6/20/2018 13:59",
 		"testGetAllModelInstances" : "ni 6/19/2018 17:14",
 		"testGetModelInstance" : "ni 6/19/2018 17:14",
 		"testGlobalHeaders" : "lj 6/6/2018 15:02",
