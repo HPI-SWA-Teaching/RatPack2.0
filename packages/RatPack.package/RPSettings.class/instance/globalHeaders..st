@@ -1,4 +1,4 @@
 accessing
 globalHeaders: aDictionary
 
-	self setValue: aDictionary for: #globalHeaders requireSafe: false.
+	self setValue: aDictionary for: #globalHeaders requireServerStopped: false.

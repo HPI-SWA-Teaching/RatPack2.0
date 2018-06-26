@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getDecoderForRequest:fromDecoders:" : "re 6/26/2018 11:59",
-		"getDecoderResultFrom:forRequest:" : "re 6/20/2018 21:52",
-		"preHook:" : "re 6/20/2018 21:54",
+		"getParserForRequest:fromParsers:" : "re 6/26/2018 12:13",
+		"getParserResultFrom:forRequest:" : "re 6/26/2018 12:13",
+		"preHook:" : "re 6/26/2018 12:12",
 		"shouldProcessRequest:" : "re 6/26/2018 11:59" } }

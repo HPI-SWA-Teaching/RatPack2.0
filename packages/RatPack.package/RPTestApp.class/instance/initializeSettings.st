@@ -2,8 +2,8 @@ initialize-release
 initializeSettings
 
 	(self settings)
-		contentDecoders: (Dictionary newFrom: {
-			'test/contenttype' -> RPMockDecoder
+		contentParsers: (Dictionary newFrom: {
+			'test/contenttype' -> RPMockParser
 		});
 		
 		globalMiddleware: {

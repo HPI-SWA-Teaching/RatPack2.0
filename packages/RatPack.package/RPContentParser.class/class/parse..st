@@ -1,3 +1,3 @@
 as yet unclassified
-decode: aString
+parse: aString
 	^ self subclassResponsibility

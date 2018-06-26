@@ -1,4 +1,4 @@
 accessing
 apiRoutePrefix: aPrefix
 
-	self setValue: aPrefix for: #apiRoutePrefix requireSafe: true.
+	self setValue: aPrefix for: #apiRoutePrefix requireServerStopped: true.

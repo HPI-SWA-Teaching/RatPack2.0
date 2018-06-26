@@ -1,4 +1,4 @@
 accessing
 objectNotFoundJson: aJsonString
 
-	self setValue: aJsonString for: #objectNotFoundJson requireSafe: false.
+	self setValue: aJsonString for: #objectNotFoundJson requireServerStopped: false.

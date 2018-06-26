@@ -1,4 +1,4 @@
 accessing
 htmlRoutePrefix: aPrefix
 
-	self setValue: aPrefix for: #htmlRoutePrefix requireSafe: true.
+	self setValue: aPrefix for: #htmlRoutePrefix requireServerStopped: true.

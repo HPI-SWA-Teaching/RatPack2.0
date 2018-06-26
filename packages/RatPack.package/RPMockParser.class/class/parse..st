@@ -1,5 +1,5 @@
 as yet unclassified
-decode: anEncodedObject
+parse: anEncodedObject
 
 	anEncodedObject = 'invalid'
 		ifTrue: [^ self error: 'Invalid content']

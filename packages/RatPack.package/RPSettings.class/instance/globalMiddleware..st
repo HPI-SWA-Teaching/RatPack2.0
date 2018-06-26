@@ -1,4 +1,4 @@
 accessing
 globalMiddleware: aMiddlewareCollection
 
-	self setValue: aMiddlewareCollection for: #globalMiddleware requireSafe: true.
+	self setValue: aMiddlewareCollection for: #globalMiddleware requireServerStopped: true.

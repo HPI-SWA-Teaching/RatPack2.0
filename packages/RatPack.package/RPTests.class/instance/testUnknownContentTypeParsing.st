@@ -1,5 +1,5 @@
-test - decoding middleware
-testUnknownContentTypeDecoding
+test - parsing middleware
+testUnknownContentTypeParsing
 	
 	RPTestHelper put: '/index' on: app headers: (Dictionary newFrom: {'Content-Type' -> 'test/unknown'}) content: ''.
 	self assert: (app parsedRequestContents) equals: nil.

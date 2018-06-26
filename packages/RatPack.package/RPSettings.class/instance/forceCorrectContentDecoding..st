@@ -1,4 +1,4 @@
 accessing
 forceCorrectContentDecoding: aValue
 
-	self setValue: aValue for: #forceCorrectContentDecoding requireSafe: true
+	self setValue: aValue for: #forceCorrectContentDecoding requireServerStopped: true

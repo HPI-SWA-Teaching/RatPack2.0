@@ -1,14 +1,14 @@
 interaction
 preHook: anEnvironment
 	
-	| request decoder result |
+	| request parser result |
 	request := anEnvironment request.
 	
 	[
 		(self shouldProcessRequest: request)
 		ifTrue: [
-			decoder := self getDecoderForRequest: request fromDecoders: anEnvironment settings contentDecoders.
-			result := self getDecoderResultFrom: decoder forRequest: request.
+			parser := self getParserForRequest: request fromParsers: anEnvironment settings contentParsers.
+			result := self getParserResultFrom: parser forRequest: request.
 			anEnvironment parsedRequestContents: result.
 		]
 	] on: Error do: [ :sig |

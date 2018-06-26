@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "RPContentDecoder",
+	"name" : "RPJsonContentParser",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RPContentParser",
 	"type" : "normal" }

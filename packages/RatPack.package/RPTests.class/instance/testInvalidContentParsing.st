@@ -1,5 +1,5 @@
-test - decoding middleware
-testInvalidContentDecoding
+test - parsing middleware
+testInvalidContentParsing
 	
 	RPTestHelper put: '/index' on: app headers: (Dictionary newFrom: {'Content-Type' -> 'test/contenttype'}) content: 'invalid'.
 	self assert: (app parsedRequestContents) equals: nil.

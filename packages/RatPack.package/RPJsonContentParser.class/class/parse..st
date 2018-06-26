@@ -1,4 +1,4 @@
 as yet unclassified
-decode: aJsonString
+parse: aJsonString
 
 	^ Json readFrom: (ReadStream on: aJsonString)

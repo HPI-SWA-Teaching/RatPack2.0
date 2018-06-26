@@ -1,5 +1,5 @@
 private
-getDecoderResultFrom: aDecoder forRequest: aRequest
+getParserResultFrom: aParser forRequest: aRequest
 
 	| content |
 	
@@ -7,4 +7,4 @@ getDecoderResultFrom: aDecoder forRequest: aRequest
 		ifTrue: [ content := aRequest rawPutContents ]
 		ifFalse: [ content := aRequest rawPostContents ].
 	
-	^ aDecoder decode: content
+	^ aParser parse: content
