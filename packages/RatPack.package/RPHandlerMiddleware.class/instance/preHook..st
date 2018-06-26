@@ -6,4 +6,4 @@ preHook: anEnv
 	response := (self application perform: anEnv handler withArguments: anEnv parsedRequestArguments).
 	self setBodyIfAppropiate: response in: anEnv.
 	
-	^ false.
+	^ false

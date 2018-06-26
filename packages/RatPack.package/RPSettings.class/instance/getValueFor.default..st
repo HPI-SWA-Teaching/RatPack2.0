@@ -1,4 +1,4 @@
 private
 getValueFor: aKey default: aBlock
 
-	^ values at: aKey ifAbsentPut: aBlock.
+	^ values at: aKey ifAbsentPut: aBlock

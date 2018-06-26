@@ -1,5 +1,4 @@
 object handling
 rowToDict: aPGRow
 
-	^ aPGRow dictionary collect: [:index | aPGRow at: index].
-	
+	^ aPGRow dictionary collect: [:index | aPGRow at: index]

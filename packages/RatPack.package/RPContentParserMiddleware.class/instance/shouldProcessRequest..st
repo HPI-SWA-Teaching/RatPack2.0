@@ -8,4 +8,4 @@ shouldProcessRequest: aRequest
 	(method = #put) ifTrue: [ ^ true ].
 	(method = #post) ifTrue: [ ^ true ].
 	
-	^ false.
+	^ false
