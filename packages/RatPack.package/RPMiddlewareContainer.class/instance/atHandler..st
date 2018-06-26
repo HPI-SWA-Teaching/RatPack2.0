@@ -2,5 +2,5 @@ private-accessing
 atHandler: aSymbol
 	
 	| list |
-	list := self handlerMapping at: aSymbol ifAbsentPut: [ #(#globalMiddleware) asOrderedCollection ].
+	list := self symbolsForHandler at: aSymbol ifAbsentPut: [ #(#globalMiddleware) asOrderedCollection ].
 	^ self includeGlobalMiddleware: list

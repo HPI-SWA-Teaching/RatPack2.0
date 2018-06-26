@@ -2,15 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"atHandler:" : "re 6/26/2018 12:00",
+		"atHandler:" : "re 6/26/2018 12:18",
 		"createInstanceFromSymbol:" : "lj 6/5/2018 08:17",
 		"globalMiddleware" : "re 6/20/2018 22:00",
 		"globalMiddlewareKey" : "re 6/20/2018 22:00",
-		"handlerMapping" : "lj 5/23/2018 13:53",
 		"includeGlobalMiddleware:" : "lj 5/30/2018 14:47",
-		"instanceForName:" : "lj 5/24/2018 00:05",
+		"instanceForName:" : "re 6/26/2018 12:19",
+		"instances" : "re 6/26/2018 12:20",
 		"instancesForHandler:" : "lj 5/24/2018 00:06",
-		"instancesMapping" : "lj 5/23/2018 13:53",
-		"registerMiddleware:forHandler:" : "re 6/20/2018 22:13",
+		"registerMiddleware:forHandler:" : "re 6/26/2018 12:18",
 		"settings" : "lj 6/5/2018 08:29",
-		"settings:" : "lj 6/5/2018 08:29" } }
+		"settings:" : "lj 6/5/2018 08:29",
+		"symbolsForHandler" : "re 6/26/2018 12:18" } }
