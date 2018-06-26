@@ -1,15 +1,14 @@
 interaction
 preHook: anEnvironment
 	
-	| request parser result |
+	| request parser |
 	request := anEnvironment request.
 	
 	[
 		(self shouldProcessRequest: request)
 		ifTrue: [
 			parser := self getParserForRequest: request fromParsers: anEnvironment settings contentParsers.
-			result := self getParserResultFrom: parser forRequest: request.
-			anEnvironment parsedRequestContents: result.
+			anEnvironment parsedRequestContents: (parser parse: request rawRequestContents).
 		]
 	] on: Error do: [ :sig |
 		anEnvironment parsedRequestContents: nil.
