@@ -1,5 +1,5 @@
 interaction
 preHook: anEnv
 
-	anEnv headersPut: self settings globalHeaders.
+	anEnv headersPut: anEnv settings globalHeaders.
 	^ true

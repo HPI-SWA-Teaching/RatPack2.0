@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"atHandler:" : "re 6/26/2018 12:18",
-		"createInstanceFromSymbol:" : "lj 6/5/2018 08:17",
+		"createInstanceFromSymbol:" : "re 6/26/2018 13:18",
 		"globalMiddleware" : "re 6/20/2018 22:00",
 		"globalMiddlewareKey" : "re 6/20/2018 22:00",
 		"includeGlobalMiddleware:" : "lj 5/30/2018 14:47",
