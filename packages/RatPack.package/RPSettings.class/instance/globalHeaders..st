@@ -1,4 +1,4 @@
 accessing
 globalHeaders: aDictionary
 
-	globalHeaders := aDictionary.
+	self setValue: aDictionary for: #globalHeaders requireServerStopped: false.

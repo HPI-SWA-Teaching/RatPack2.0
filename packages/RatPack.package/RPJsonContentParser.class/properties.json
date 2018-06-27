@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPJsonContentParser",
+	"pools" : [
+		 ],
+	"super" : "RPContentParser",
+	"type" : "normal" }

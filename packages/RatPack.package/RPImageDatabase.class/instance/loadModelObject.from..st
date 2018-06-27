@@ -6,5 +6,4 @@ loadModelObject: anId from: anRPModelClass
 	object := (self modelDictionary at: (anRPModelClass name)) at: (anId asString asSymbol) 
 		ifAbsent: [self notify:  anRPModelClass name, ' not found!'].
 	
-	^ anRPModelClass constructModel: object.   
-	 
+	^ anRPModelClass constructModel: object

@@ -1,4 +1,0 @@
-constants
-forceCorrectContentDecoding
-
-	^ false

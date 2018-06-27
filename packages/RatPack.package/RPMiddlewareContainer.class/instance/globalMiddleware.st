@@ -1,4 +1,4 @@
 private-accessing
 globalMiddleware
 
-	^ globalMiddleware
+	^ self settings globalMiddleware

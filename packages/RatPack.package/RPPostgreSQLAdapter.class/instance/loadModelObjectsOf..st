@@ -5,4 +5,4 @@ loadModelObjectsOf: anRPModelClass
 	response := self executeSQLStatement: ('SELECT * FROM ', (anRPModelClass tableName)).
 	objectsAsDicts := self transformToCollection: response. 
 	
-	^ objectsAsDicts collect: [:each | (anRPModelClass constructModel: each)].
+	^ objectsAsDicts collect: [:each | (anRPModelClass constructModel: each)]

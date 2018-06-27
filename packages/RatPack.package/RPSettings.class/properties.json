@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"forceCorrectContentDecoding",
-		"globalHeaders" ],
+		"serverRunning",
+		"values" ],
 	"name" : "RPSettings",
 	"pools" : [
 		 ],

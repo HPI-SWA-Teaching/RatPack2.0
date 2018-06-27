@@ -15,6 +15,6 @@ testGetModelInstance
 
       idUrl := url, '/2'.
       result := RPTestHelper get: idUrl on: app.
-      self assert: app class objectNotFoundJson equals: (result contents contents).
+      self assert: app settings objectNotFoundJson equals: (result contents contents).
 	self assert: result status equals: #notFound.
 	self assert: result contentType equals: 'application/json'. 

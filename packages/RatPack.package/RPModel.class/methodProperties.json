@@ -16,7 +16,7 @@
 		"idColumnName" : "LB 7/15/2015 14:02",
 		"initializeObjectFrom:" : "LB 7/31/2015 17:49",
 		"metaDataVariables" : "LB 7/15/2015 14:04",
-		"new:with:" : "MF 7/14/2015 16:07",
+		"new:with:" : "re 6/26/2018 12:00",
 		"overridesDefaultRoute" : "jm 5/15/2018 12:21",
 		"reconstructObject:" : "MF 7/14/2015 15:09",
 		"refClass" : "LB 7/31/2015 17:49",
@@ -25,7 +25,7 @@
 		"updateObject:withJson:" : "ni 6/19/2018 17:24",
 		"validateCreateJson:" : "ni 6/19/2018 16:44",
 		"validateObject:" : "pk 7/12/2015 23:38",
-		"validateRefClass" : "LB 7/31/2015 17:42",
+		"validateRefClass" : "re 6/26/2018 12:01",
 		"validateUpdateJson:" : "lj 6/18/2018 11:08" },
 	"instance" : {
 		"asDict" : "LB 7/31/2015 14:36",

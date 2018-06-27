@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"handlerMapping",
-		"instanceMapping",
-		"globalMiddleware",
-		"globalMiddlewareKey",
-		"settings" ],
+		"settings",
+		"symbolsForHandler",
+		"instances" ],
 	"name" : "RPMiddlewareContainer",
 	"pools" : [
 		 ],

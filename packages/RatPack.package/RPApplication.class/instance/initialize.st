@@ -5,8 +5,10 @@ initialize
 	
 	settings := RPSettings new.
 	
-	self onRequestDo: [:httpRequest | self processRequest: httpRequest];
+	self
+		initializeSettings;
 		initializeDynamicVariables;
 		initializeRoutes;
 		initializePragmaMiddleware;
-		initializeLogging.
+		initializeLogging;
+		onRequestDo: [:httpRequest | self processRequest: httpRequest].

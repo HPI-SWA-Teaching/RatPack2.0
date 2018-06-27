@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPContentParserMiddleware",
+	"pools" : [
+		 ],
+	"super" : "RPMiddleware",
+	"type" : "normal" }

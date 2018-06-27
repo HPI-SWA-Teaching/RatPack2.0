@@ -1,4 +1,4 @@
 accessing
 forceCorrectContentDecoding
 
-	^ forceCorrectContentDecoding
+	^ self getValueFor: #forceCorrectContentDecoding default: [ false ]

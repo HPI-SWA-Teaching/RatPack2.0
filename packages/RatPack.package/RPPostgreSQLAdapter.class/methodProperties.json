@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"connectTo:on:at:as:with:" : "MF 7/4/2015 16:39",
-		"connection" : "MF 7/4/2015 16:45",
+		"connection" : "re 6/26/2018 12:00",
 		"connectionArguments" : "LB 7/12/2015 23:03",
 		"connectionArguments:" : "MF 7/4/2015 17:26",
 		"convertAssociationToSQLString:" : "pk 7/12/2015 20:12",
@@ -20,8 +20,8 @@
 		"getUpdatedValues:from:" : "LB 7/31/2015 17:02",
 		"getValueStringFor:of:" : "pk 7/12/2015 23:16",
 		"loadModelObject:from:" : "LB 7/31/2015 17:08",
-		"loadModelObjectsOf:" : "lj 5/7/2018 12:28",
+		"loadModelObjectsOf:" : "re 6/26/2018 12:00",
 		"persist:from:" : "jm 6/1/2018 15:02",
-		"rowToDict:" : "LB 7/15/2015 02:05",
+		"rowToDict:" : "re 6/26/2018 12:00",
 		"transformToCollection:" : "MF 7/14/2015 15:02",
 		"update:with:from:" : "jm 6/1/2018 14:59" } }

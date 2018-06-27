@@ -5,10 +5,10 @@ testDefaultRouteNamingStrategies
 
 	app registerModel: RPTestModelWithoutRouteName.
 	
-	routeName := RPApplication apiRoutePrefix, '(', (RPTestRouteNamingStrategy new nameRoute: RPTestModelWithoutRouteName name), ')'.
+	routeName := app settings apiRoutePrefix, '(', (RPTestRouteNamingStrategy new nameRoute: RPTestModelWithoutRouteName name), ')'.
 	self testDefaultApiRoutesFor: routeName.
 	
-	routeName := RPApplication htmlRoutePrefix, '(', (RPTestRouteNamingStrategy new nameRoute: RPTestModelWithoutRouteName name), ')'.
+	routeName := app settings htmlRoutePrefix, '(', (RPTestRouteNamingStrategy new nameRoute: RPTestModelWithoutRouteName name), ')'.
 	self testDefaultHtmlRoutesFor: routeName.
 	
 

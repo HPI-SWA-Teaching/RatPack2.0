@@ -1,4 +1,5 @@
-initialization
+initialize-release
 initialize
 
-	self forceCorrectContentDecoding: false.
+	serverRunning := false.
+	values := Dictionary new.
