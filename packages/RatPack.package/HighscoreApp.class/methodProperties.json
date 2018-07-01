@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"initialize" : "jm 7/1/2018 15:06" },
+	"instance" : {
+		"bootstrapTemplate" : "jm 7/1/2018 12:42",
+		"customCssTemplate" : "jm 7/1/2018 13:53",
+		"gameListCssTemplate" : "jm 7/1/2018 14:09",
+		"gameListTemplate" : "jm 7/1/2018 14:35",
+		"getGameList" : "jm 7/1/2018 13:35",
+		"getHighscoreListFor:" : "jm 7/1/2018 15:30",
+		"getPlayerDetailsFor:" : "jm 7/1/2018 15:11",
+		"getPlayerList" : "jm 7/1/2018 15:21",
+		"highscoreListCssTemplate" : "jm 7/1/2018 15:01",
+		"highscoreListTemplate" : "jm 7/1/2018 15:31",
+		"htmlBeginTemplate" : "jm 7/1/2018 14:14",
+		"htmlEndTemplate" : "jm 7/1/2018 13:55",
+		"initialize" : "jm 7/1/2018 15:12",
+		"navbarTemplate" : "jm 7/1/2018 15:34",
+		"playerDetailsTemplate" : "jm 7/1/2018 15:32",
+		"playerListCssTemplate" : "jm 7/1/2018 15:35",
+		"playerListTemplate" : "jm 7/1/2018 15:35" } }

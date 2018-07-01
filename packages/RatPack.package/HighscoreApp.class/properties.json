@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HighscoreApp",
+	"pools" : [
+		 ],
+	"super" : "RPApplication",
+	"type" : "normal" }
