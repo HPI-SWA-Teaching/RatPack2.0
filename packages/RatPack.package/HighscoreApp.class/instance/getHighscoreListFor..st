@@ -1,4 +1,4 @@
-as yet unclassified
+handler
 getHighscoreListFor: aGameId
 
 	<get: '/highscores/(\d+)/'>

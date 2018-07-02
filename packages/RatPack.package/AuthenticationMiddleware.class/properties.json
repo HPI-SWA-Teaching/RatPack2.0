@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"name",
-		"description",
-		"image",
-		"password" ],
-	"name" : "Game",
+		 ],
+	"name" : "AuthenticationMiddleware",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RPMiddleware",
 	"type" : "normal" }

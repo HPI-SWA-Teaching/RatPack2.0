@@ -1,11 +1,11 @@
-as yet unclassified
+templating
 playerDetailsTemplate
 
 	| htmlString |
 	
 	htmlString := self htmlBeginTemplate, self highscoreListCssTemplate, '
 	<div class="page-header">
-		<h1>Highscores für <%= player object name %></h1>
+		<h1>Highscores von <%= player object name %></h1>
 	</div>
 	<div class="list-group">
 		<% scores doWithIndex: [ :score :index | %>

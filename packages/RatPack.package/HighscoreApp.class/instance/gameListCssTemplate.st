@@ -1,4 +1,4 @@
-as yet unclassified
+templating
 gameListCssTemplate
 
 	^ '<style>

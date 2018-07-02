@@ -1,4 +1,4 @@
-as yet unclassified
+handler
 getPlayerList
 
 	<get: '/players/'>
