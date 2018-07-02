@@ -2,5 +2,6 @@ test - models
 testTestModelValidateJsonCorrect
 	
 	"correct Json"
-	 self assert: ([ RPTestModel createObject: '{"salary":1 , "name":"green" }'. true]on: Warning do:[false]).
+	 self assert: ([ RPTestModel createObjectFrom: (Dictionary newFrom: {'salary' ->1. 'name' -> 'green'}). true]
+		on: Warning do: [false]).
 	
