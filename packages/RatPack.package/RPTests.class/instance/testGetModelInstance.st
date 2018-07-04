@@ -5,7 +5,7 @@ testGetModelInstance
       app registerModel: RPTestModel.
       url :=  '/api/routeName'. 
 	testJson := RPTestModel fullJson.
-  RPTestHelper post: url on: app content: testJson.
+ 	RPTestHelper post: url on: app json: testJson.
 
       idUrl := url, '/1'.
       result := RPTestHelper get: idUrl on: app.

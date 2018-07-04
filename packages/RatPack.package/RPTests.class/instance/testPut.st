@@ -7,7 +7,7 @@ testPut
 	testJson := RPTestModel fullJson.
 	otherTestJson := RPTestModel otherFullJson.
 	urlId := url, '/1'.
-	postResult := RPTestHelper post: url on: app content: testJson.
+	postResult := RPTestHelper post: url on: app json: testJson.
 	putResult := RPTestHelper put: urlId on: app content: otherTestJson.
 		
 	self assert: ((postResult contents contents) ~= (putResult contents contents)).

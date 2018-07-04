@@ -6,8 +6,8 @@ testGetAllModelInstances
 	url := '/api/routeName'.
 	testJson := RPTestModel fullJson.
 	testJson2 := RPTestModel otherFullJson.
-	RPTestHelper post: url on: app content: testJson.
-	RPTestHelper post: url on: app content: testJson2.
+	RPTestHelper post: url on: app json: testJson.
+	RPTestHelper post: url on: app json: testJson2.
 	result := RPTestHelper get: url on: app.
 	self assert: ((result contents contents) includesSubString: (testJson)).
 	self assert: ((result contents contents) includesSubString: (testJson2))

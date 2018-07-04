@@ -1,4 +1,4 @@
 http requests
 createTestObjects: amount
 
-	^ (1 to: amount) collect: [:i | RPTestModel createObject: RPTestModel fullJson.] 
+	^ (1 to: amount) collect: [:i | RPTestModel createObjectFrom: RPTestModel fullObject.] 

@@ -1,11 +1,11 @@
 test - REST operations
 testDeleteSingleObjectViaRestInterface
 	
-	| url idUrl result |
+	| url idUrl result|
 	app database: RPPostgreSQLAdapter new.
 	app registerModel: RPTestModel.
 	url :=  '/api/routeName'.
-	RPTestHelper post: url on: app content: RPTestModel fullJson.
+	RPTestHelper post: url on: app json: RPTestModel fullJson.
 	self assert: (app database loadModelObject: 1 from: RPTestModel) notNil.
   
 	idUrl := url, '/1'.

@@ -4,7 +4,7 @@ testPutWithPartialJson
 	| url putResult postResult |
 	app registerModel: RPTestModel.
 	url := app settings apiRoutePrefix, (RPTestModel defaultRoute).
-	postResult := RPTestHelper post: url on: app content: RPTestModel fullJson.
+	postResult := RPTestHelper post: url on: app json: RPTestModel fullJson.
 	putResult := RPTestHelper put: url, '/1' on: app content: RPTestModel partialJson.
 		
 	self assert: ((postResult contents contents) ~= (putResult contents contents)).

@@ -1,9 +1,10 @@
 object handling
 writeNewObjectForPost: aRouteSuffix
 
-	| jsonString aRPModelClass responseId |
+	| aRPModelClass responseId |
+	
+	self parsedRequestContents ifNil: [^ self badRequest].
 	
 	aRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
-	jsonString := self request rawPostContents.
-	responseId := self persistObjectBy: jsonString from: aRPModelClass.
+	responseId := self persistObjectBy: self parsedRequestContents from: aRPModelClass.
 	self writeObjectForGet: aRouteSuffix id: responseId.

@@ -5,7 +5,7 @@ testPost
 	app registerModel: RPTestModel.
 	url :=  '/api/routeName'.
 	testJson := RPTestModel fullJson.
-	RPTestHelper post: url on: app content: testJson.
+	RPTestHelper post: url on: app json: testJson.
 	self assert: (RPTestModel createJsonFor: 
 					(app database loadModelObject: 1 from: RPTestModel) object) 
 					equals: testJson.
