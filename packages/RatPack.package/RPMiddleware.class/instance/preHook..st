@@ -1,4 +1,8 @@
 interaction
 preHook: anEnv
 
-	" return true if you want to continue handling this request. Return false if the handling should be aborted."
+	 "Called before handler execution
+	  Return true if you want to continue handling this request.
+	  Return false if the handling should be aborted. (Post Hook is not called.)"
+	
+	^ true
