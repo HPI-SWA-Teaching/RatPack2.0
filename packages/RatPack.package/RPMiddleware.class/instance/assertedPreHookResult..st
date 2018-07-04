@@ -1,6 +1,6 @@
 interaction
 assertedPreHookResult: aPreHookResult
 
-	(aPreHookResult == true or: aPreHookResult == false)
+	((aPreHookResult respondsTo: #ifTrue:)  or: (aPreHookResult respondsTo: #ifFalse:))
 		ifTrue: 	[ ^ aPreHookResult ]
-		ifFalse: 	[ self error: 'preHook of: ' , self name , ' has to return true or false. True: process execution. False: Abort Execution.' ]
+		ifFalse: 	[ self error: 'preHook of: ' , self name , ' has to return true or false.' ]

@@ -2,8 +2,8 @@
 	"class" : {
 		"blacklist" : "re 6/26/2018 12:00" },
 	"instance" : {
-		"assertedPreHookResult:" : "lj 7/4/2018 13:11",
+		"assertedPreHookResult:" : "lj 7/4/2018 13:59",
 		"handle:next:" : "lj 7/4/2018 13:07",
 		"isUrlBlacklisted:" : "lj 5/25/2018 19:45",
 		"postHook:" : "lj 7/4/2018 11:56",
-		"preHook:" : "lj 7/4/2018 12:17" } }
+		"preHook:" : "lj 7/4/2018 14:09" } }
