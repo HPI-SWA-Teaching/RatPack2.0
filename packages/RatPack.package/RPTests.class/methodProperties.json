@@ -33,6 +33,7 @@
 		"testMiddlewareCallChainInterrupt" : "lj 5/25/2018 20:59",
 		"testMiddlewareCallChainOrder" : "lj 5/25/2018 19:04",
 		"testMiddlewareInstanciation" : "lj 5/22/2018 15:14",
+		"testMiddlewarePreHookConvention" : "lj 7/4/2018 14:15",
 		"testMiddlewarePreHookFalse" : "lj 5/30/2018 15:02",
 		"testMiddlewarePreHookTrue" : "lj 5/30/2018 15:02",
 		"testModelNameToSnakeCase" : "jm 5/23/2018 15:52",
