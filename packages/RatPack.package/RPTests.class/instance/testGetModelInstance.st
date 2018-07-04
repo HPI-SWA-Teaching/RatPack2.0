@@ -1,12 +1,11 @@
 test - REST operations
 testGetModelInstance
  
-	| url idUrl result testJson headers |
+	| url idUrl result testJson |
       app registerModel: RPTestModel.
       url :=  '/api/routeName'. 
 	testJson := RPTestModel fullJson.
-	headers := Dictionary newFrom: {'Content-Type' -> 'application/json'}.
- 	RPTestHelper post: url on: app headers: headers content: testJson.
+ 	RPTestHelper post: url on: app json: testJson.
 
       idUrl := url, '/1'.
       result := RPTestHelper get: idUrl on: app.
