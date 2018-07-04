@@ -1,17 +1,21 @@
+---
+name: Bug report
+about: Create a report to improve RatPack
+
+---
+
 ### Subject
-(A short description of what this issue is about. This shouldn't be more than two lines.)
+(A short description of this bug. This shouldn't be more than two lines.)
 
 ### Details
-(If this is a feature request, explain why it should be added. Specific use-cases are best.
-For bug reports, please provide as much relevant info as possible.)
+(please provide as much relevant info as possible.)
 
 ### Tasks / Acceptance Criteria
 - [ ] (List of steps that need to be completed in order for this issue to be complete)
 
 ### Test Code / Example Code
 ```smalltalk
-(For bugs: A failing test showing the issue.
-For feature requests: Tests you would like this feature to pass or code that demonstrates the feature)
+(A failing test showing the issue.)
 ```
 
 ### Version
