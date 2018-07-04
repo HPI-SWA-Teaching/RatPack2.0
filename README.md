@@ -5,6 +5,8 @@ of KomHttpServer for Squeak/Smalltalk.
 
 For licensing, see the file COPYRIGHT
 
+You can find the last stable version of RatPack on the [master] (https://github.com/hpi-swa-teaching/RatPack2.0/tree/master) branch.
+
 Setup Postgres
 -----
 
