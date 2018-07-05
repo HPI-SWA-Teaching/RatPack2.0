@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createHeader" : "ni 7/5/2018 11:26",
+		"createPayload" : "ni 7/5/2018 11:16",
+		"createSignature" : "ni 7/5/2018 11:17",
+		"createToken" : "ni 7/5/2018 11:18",
+		"parseToken:" : "ni 7/5/2018 13:42",
+		"preHook:" : "ni 7/5/2018 12:34",
+		"secret" : "ni 7/5/2018 12:46",
+		"validateTokenObject:" : "ni 7/5/2018 13:33" } }

@@ -65,4 +65,5 @@
 		"testTestModelValidateRefClass" : "MF 7/6/2015 18:42",
 		"testUnknownContentTypeParsing" : "re 6/26/2018 12:06",
 		"testUpdateObjectOnExternalDatabase" : "MF 7/14/2015 16:10",
-		"testUpdateSingleObject" : "lj 6/18/2018 12:56" } }
+		"testUpdateSingleObject" : "lj 6/18/2018 12:56",
+		"testValidationOfTokenObject" : "ni 7/5/2018 13:34" } }
