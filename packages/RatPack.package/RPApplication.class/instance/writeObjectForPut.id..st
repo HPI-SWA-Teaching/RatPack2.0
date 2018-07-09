@@ -5,6 +5,7 @@ writeObjectForPut: aRouteSuffix id: anID
 	
 	aRPModelClass := self getModelForRouteSuffix: aRouteSuffix.
 	object := self database loadModelObject: (anID asNumber) from: aRPModelClass.
-	object := aRPModelClass updateObject: object object withJson: self request rawPutContents.
+	self parsedRequestContents ifNil: [^ self badRequest].
+	object := aRPModelClass updateObject: object object with: self parsedRequestContents.
 	self database update: object with: anID from: aRPModelClass.
-	self writeObjectForGet: aRouteSuffix id: anID
+	self writeObjectForGet: aRouteSuffix id: anID.
