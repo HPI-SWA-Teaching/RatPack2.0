@@ -2,14 +2,11 @@ as yet unclassified
 createToken: anEnv
 
 	| signature header payload message |
-	header := self createHeader base64Encoded.
-	header := self base64UrlEncoded: header.
-	payload := (self createPayload: anEnv) base64Encoded.
-	payload:= self base64UrlEncoded: payload.
+	header := self base64UrlEncoded: self createHeader.
+	payload := self base64UrlEncoded: (self createPayload: anEnv).
+	
 	message := header , '.' , payload.
-	signature := self createSignature: message.
 	
+	signature := self base64UrlEncoded: (self createSignature: message).
 	
-	^ message , '.' , signature 
-	
-	
+	^ message , '.' , signature

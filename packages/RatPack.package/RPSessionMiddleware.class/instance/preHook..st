@@ -2,6 +2,7 @@ as yet unclassified
 preHook: anEnv
 
 	| token |
+
 	anEnv session: JsonObject new.
 	token := anEnv request headerAt: #authorization ifAbsent: [ ^ true ].
 	(self validateToken: token) ifFalse: [ ^ true ].

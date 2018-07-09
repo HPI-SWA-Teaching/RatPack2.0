@@ -63,7 +63,8 @@
 		"testTestModelValidateCorrect" : "re 7/4/2018 13:22",
 		"testTestModelValidateIncorrect" : "re 7/4/2018 13:22",
 		"testTestModelValidateRefClass" : "MF 7/6/2015 18:42",
+		"testTokenGeneration" : "re 7/9/2018 15:43",
+		"testTokenValidation" : "re 7/9/2018 15:52",
 		"testUnknownContentTypeParsing" : "re 6/26/2018 12:06",
 		"testUpdateObjectOnExternalDatabase" : "MF 7/14/2015 16:10",
-		"testUpdateSingleObject" : "lj 6/18/2018 12:56",
-		"testValidationOfTokenObject" : "cs 7/9/2018 14:45" } }
+		"testUpdateSingleObject" : "lj 6/18/2018 12:56" } }
