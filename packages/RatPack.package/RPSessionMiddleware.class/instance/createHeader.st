@@ -1,5 +1,5 @@
 as yet unclassified
 createHeader 
 
-	^ 'alg: '
+	^ '{ "alg" : "HS265" , "typ" : "JWT" }'
 	

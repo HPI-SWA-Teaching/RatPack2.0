@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createHeader" : "ni 7/5/2018 11:26",
-		"createPayload" : "ni 7/5/2018 11:16",
-		"createSignature" : "ni 7/5/2018 11:17",
-		"createToken" : "ni 7/5/2018 11:18",
-		"parseToken:" : "ni 7/5/2018 13:42",
-		"preHook:" : "ni 7/5/2018 12:34",
+		"base64UrlEncoded:" : "cs 7/9/2018 15:21",
+		"createHeader" : "cs 7/9/2018 15:01",
+		"createPayload:" : "cs 7/9/2018 12:57",
+		"createSignature:" : "cs 7/9/2018 15:26",
+		"createToken:" : "cs 7/9/2018 15:23",
+		"postHook:" : "cs 7/9/2018 14:50",
+		"preHook:" : "cs 7/9/2018 14:02",
 		"secret" : "ni 7/5/2018 12:46",
-		"validateTokenObject:" : "ni 7/5/2018 13:33" } }
+		"tokenPayload:" : "cs 7/9/2018 14:00",
+		"validateToken:" : "cs 7/9/2018 14:08" } }

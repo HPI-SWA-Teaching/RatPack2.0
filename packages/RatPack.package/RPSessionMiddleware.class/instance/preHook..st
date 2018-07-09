@@ -1,9 +1,10 @@
 as yet unclassified
 preHook: anEnv
 
-	| token tokenObject |
-	token := anEnv request headerAt: #authorization ifAbsent: [ self createToken. ].
-	tokenObject := self parseToken: token.
-	self validateTokenObject: tokenObject.
+	| token |
+	anEnv session: JsonObject new.
+	token := anEnv request headerAt: #authorization ifAbsent: [ ^ true ].
+	(self validateToken: token) ifFalse: [ ^ true ].
+	[ anEnv session: (self tokenPayload: token). ] on: Error do: [ ^ true ].
 	
 	

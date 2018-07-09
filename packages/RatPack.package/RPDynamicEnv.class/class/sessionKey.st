@@ -1,0 +1,4 @@
+constants
+sessionKey
+	
+	^ #rpSession

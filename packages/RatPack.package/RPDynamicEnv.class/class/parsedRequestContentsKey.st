@@ -1,4 +1,4 @@
 constants
-parsedRequestContents
+parsedRequestContentsKey
 	
 	^ #rpParsedRequestContents
