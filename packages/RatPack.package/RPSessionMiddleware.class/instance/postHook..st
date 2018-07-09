@@ -1,7 +1,9 @@
 as yet unclassified
 postHook: anEnv
-
-	anEnv headersAt: #authorization put: [  self createToken: anEnv ].
+	
+	| token |
+	token := self createToken: anEnv.
+	anEnv addCookies: {'authorization=',token} asCollection.
 	
 	
 	
