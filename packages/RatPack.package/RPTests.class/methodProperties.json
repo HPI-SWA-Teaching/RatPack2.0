@@ -42,9 +42,9 @@
 		"testPluralizer" : "jm 5/23/2018 14:44",
 		"testPost" : "re 7/4/2018 13:08",
 		"testPostReturningNewObject" : "re 7/4/2018 13:09",
-		"testPut" : "re 7/4/2018 13:06",
-		"testPutReturningUpdatedObject" : "re 7/4/2018 13:09",
-		"testPutWithPartialJson" : "re 7/4/2018 13:09",
+		"testPut" : "ni 7/9/2018 16:41",
+		"testPutReturningUpdatedObject" : "ni 7/9/2018 16:55",
+		"testPutWithPartialJson" : "ni 7/9/2018 16:56",
 		"testRedirect" : "LB 7/15/2015 19:56",
 		"testRegisterModelClass" : "MF 7/7/2015 09:48",
 		"testRemoveModelClass" : "MF 7/7/2015 10:24",
@@ -65,4 +65,4 @@
 		"testTestModelValidateRefClass" : "MF 7/6/2015 18:42",
 		"testUnknownContentTypeParsing" : "re 6/26/2018 12:06",
 		"testUpdateObjectOnExternalDatabase" : "MF 7/14/2015 16:10",
-		"testUpdateSingleObject" : "lj 6/18/2018 12:56" } }
+		"testUpdateSingleObject" : "ni 7/9/2018 16:56" } }
