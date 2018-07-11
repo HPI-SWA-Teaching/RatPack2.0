@@ -1,4 +1,4 @@
-as yet unclassified
+interaction
 createPayload: anEnv
 
 	^ anEnv session asJsonString

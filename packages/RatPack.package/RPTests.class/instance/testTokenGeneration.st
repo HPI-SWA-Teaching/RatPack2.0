@@ -4,6 +4,7 @@ testTokenGeneration
 	| session env generated expected|
 	session := RPSessionMiddleware new.
 	env := RPDynamicEnv new response: HttpResponse new.
+		env settings: app settings.
 	env session: {'name' -> 'John Doe'} asDictionary.
 	session postHook: env.
 	

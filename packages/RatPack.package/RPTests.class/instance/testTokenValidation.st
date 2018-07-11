@@ -9,6 +9,7 @@ testTokenValidation
 	'authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UifQ.gUpLaW7ugoRrKP34s49y4t-bEwnB8JJ-z5I-8unJh5c').
 	
 	env := RPDynamicEnv new request: request.
+	env settings: app settings.
 	session preHook: env.
 	
 	expected := JsonObject newFrom: {'name' -> 'John Doe'}.
