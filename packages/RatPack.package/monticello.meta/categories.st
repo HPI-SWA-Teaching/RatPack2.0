@@ -1,3 +1,4 @@
+SystemOrganization addCategory: #'RatPack-Help'!
 SystemOrganization addCategory: #RatPack!
 SystemOrganization addCategory: #'RatPack-Templating'!
 SystemOrganization addCategory: #'RatPack-Testing'!
