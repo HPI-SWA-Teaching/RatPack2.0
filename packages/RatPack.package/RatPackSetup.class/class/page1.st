@@ -4,7 +4,7 @@ page1
 		title: '1. Setup Postgresql'
 		contents: 'WINDOWS INSTALL
 		
-	used graphical installer 9.6.8. fro windows https://www.openscg.com/bigsql/postgresql/installers.jsp/
+	used graphical installer 9.6.8. from windows https://www.openscg.com/bigsql/postgresql/installers.jsp/
 
 LINUX INSTALL (Arch)
 
