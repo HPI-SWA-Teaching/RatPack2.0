@@ -15,7 +15,7 @@ page2
 	
 	2. Create model class (subclass of RPModel). It needs the following class methods:
 
-		- dataTypes - returns dictionary with data types for instance variables of the data class (this are the attributes of the model)
+		- dataTypes - returns dictionary with data types for instance variables of the data class (these are the attributes of the model)
 		- defaultValues - returns default values for attributes
 		- refClass - returns the data class
 		- tableName - returns the name of the table where the data is stored
@@ -27,7 +27,7 @@ page2
 	->the model needs an existing class with instance variables named like the attributes for the model
 	->warnings:
 		-model with same name already registered
-		-model is unvalid
+		-model is invalid
 		(hint:  Attributes are just the pure attribute names as String)
 	
 	When in RPControlPanel:
