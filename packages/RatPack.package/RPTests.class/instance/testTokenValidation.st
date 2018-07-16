@@ -1,8 +1,8 @@
 test - session middleware
 testTokenValidation
 
-	| session env generated expected request|
-	session := RPSessionMiddleware new.
+	| sessionMiddleware env generated expected request|
+	sessionMiddleware := RPSessionMiddleware new.
 	
 	request := HttpRequest new.
 	request propertyAt: #cookies put: (request parseCookies: 
@@ -10,7 +10,7 @@ testTokenValidation
 	
 	env := RPDynamicEnv new request: request.
 	env settings: app settings.
-	session preHook: env.
+	sessionMiddleware preHook: env.
 	
 	expected := JsonObject newFrom: {'name' -> 'John Doe'}.
 	generated := env session.
