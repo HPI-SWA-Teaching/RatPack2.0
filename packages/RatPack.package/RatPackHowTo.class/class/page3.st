@@ -11,4 +11,6 @@ page3
 	When in RPControlPanel:
 
 		- Ctrl-o to add an object
-		- Ctrl-i to remove an object'
+		- Ctrl-i to remove an object
+		
+	RatPack will also set up a REST-API for all registered models when you start the server. This can also be used to create new objects in the database. You can access it at server.com/api/.'
