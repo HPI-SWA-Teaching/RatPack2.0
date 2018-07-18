@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Help",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RatPackMiddleware",
+	"pools" : [
+		 ],
+	"super" : "RatPackHelp",
+	"type" : "normal" }
