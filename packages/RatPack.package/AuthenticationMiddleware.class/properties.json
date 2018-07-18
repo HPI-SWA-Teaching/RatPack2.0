@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AuthenticationMiddleware",
+	"pools" : [
+		 ],
+	"super" : "RPMiddleware",
+	"type" : "normal" }

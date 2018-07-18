@@ -1,0 +1,5 @@
+templating
+customCssTemplate
+
+	^ '<style>
+		</style>'

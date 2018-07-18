@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GameModel",
+	"pools" : [
+		 ],
+	"super" : "RPModel",
+	"type" : "normal" }

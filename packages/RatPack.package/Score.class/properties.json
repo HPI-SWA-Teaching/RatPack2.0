@@ -1,0 +1,16 @@
+{
+	"category" : "RatPack-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"game",
+		"score",
+		"player" ],
+	"name" : "Score",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+templating
+htmlEndTemplate
+
+	^ '</div></body>'
