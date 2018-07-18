@@ -1,4 +1,4 @@
 accessing
 bookName
 
-	^'How tos'
+	^'Using Ratpack'

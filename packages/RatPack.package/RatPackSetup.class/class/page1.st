@@ -1,23 +1,26 @@
 pages
 page1
 	^HelpTopic 
-		title: '1. Setup Postgresql'
-		contents: 'WINDOWS INSTALL
+		title: '1. Setting up PostgreSQLl'
+		contents: 'RatPack currently support two database backends, PostgreSQL and a virtual database that stores all data as objects in your squeak image.
+
+If you don''t specify a database for a web application based on RatPack, it will use a image database by default.
 		
-	used graphical installer 9.6.8. from windows https://www.openscg.com/bigsql/postgresql/installers.jsp/
-
-LINUX INSTALL (Arch)
-
-	tested with postgresql 10.3
-
-		sudo pacman -S postgresql
-
-		initdb --locale en_US.UTF-8 -D ''/var/lib/postgres/data'' (replace with your locale if necessary)
-
-		sudo systemctl start postgres
-
-	If you want postgres to be started on boot:
-
-		sudo systemctl enable postgres
-
-	Then continue as described in readme in develop branch. Useful resource: https://wiki.archlinux.org/index.php/PostgreSQL'
+To run the tests, it''s necessary to set up the postgres backend. We also recommend using this for production environments.
+The tests expect the postgres server at localhost:5432 with user ''postgres'', password ''bird'' and database name ''squeakdb''.
+		
+On Windows, we recommend using the graphical installer by BigSQL: https://www.openscg.com/bigsql/postgresql/installers.jsp/
+On Linux, we recommend using the package manager.
+	For installation on arch Linux, see this page: https://wiki.archlinux.org/index.php/PostgreSQL
+	For installation on Ubuntu or Debian, a simple ''sudo apt install postgresql'' should be enough.
+	
+Afterwards, you need to create the database called ''squeakdb'' and set the password of the ''postgres'' user to ''bird''.
+On Linux, this can be done with:
+	
+	sudo su - postgres # access postgres user
+	createdb squeakdb  # create database needed by ratpack tests
+	psql -s squeakdb   # enter SQL prompt
+	alter user postgres with password ''bird'';
+	
+On Windows, do equivalent actions in the tools provided.
+'
