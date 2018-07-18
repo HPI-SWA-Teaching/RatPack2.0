@@ -1,5 +1,5 @@
 test - session middleware
-testTokenValidation
+testTokenParsing
 
 	| sessionMiddleware env generated expected request|
 	sessionMiddleware := RPSessionMiddleware new.
