@@ -1,6 +1,7 @@
 handler
 getGameList
 
+	"Using pragmas, you can define routes for your application"
 	<get: '/games/'>
 	
 	| games |
