@@ -1,0 +1,1 @@
+This is an app which saves highscores for SWA games. 
