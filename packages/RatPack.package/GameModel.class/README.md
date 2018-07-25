@@ -1,0 +1,1 @@
+This is a model class. It describes the contents of the associated data class, in this case Game.

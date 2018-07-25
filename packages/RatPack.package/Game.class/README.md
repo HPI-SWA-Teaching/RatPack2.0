@@ -1,0 +1,1 @@
+This is a data class. It contains all data which should be saved into the database.
