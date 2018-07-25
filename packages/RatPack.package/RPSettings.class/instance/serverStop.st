@@ -1,4 +1,0 @@
-interaction
-serverStop
-
-	serverRunning := false.

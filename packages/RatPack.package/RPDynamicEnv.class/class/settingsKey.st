@@ -1,4 +1,0 @@
-constants
-settingsKey
-
-	^ #rpSettings

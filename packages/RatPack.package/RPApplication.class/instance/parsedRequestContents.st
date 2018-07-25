@@ -1,4 +1,0 @@
-accessing
-parsedRequestContents
-
-	^ self dynamicEnvironment parsedRequestContents

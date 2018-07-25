@@ -1,4 +1,0 @@
-logging
-logWindow 
-
-	^ logWindow

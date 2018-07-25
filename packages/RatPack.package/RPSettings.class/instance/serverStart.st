@@ -1,4 +1,0 @@
-interaction
-serverStart
-
-	serverRunning := true.

@@ -1,4 +1,0 @@
-accesing
-defaultValues
-	
-	self subclassResponsibility

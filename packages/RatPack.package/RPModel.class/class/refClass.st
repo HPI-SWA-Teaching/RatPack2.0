@@ -1,4 +1,0 @@
-accesing
-refClass
-
-	self subclassResponsibility 
