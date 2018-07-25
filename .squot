@@ -1,5 +1,6 @@
 OrderedDictionary {
 	'packages\/BaselineOfRatPack.package' : #SquotCypressCodeSerializer,
+	'packages\/RatPack-Core.package' : #SquotCypressCodeSerializer,
 	'packages\/RatPack-Examples.package' : #SquotCypressCodeSerializer,
 	'packages\/RatPack-Help.package' : #SquotCypressCodeSerializer,
 	'packages\/RatPack-Templating.package' : #SquotCypressCodeSerializer,

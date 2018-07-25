@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"separator" ],
+	"name" : "RPSeparator",
+	"pools" : [
+		 ],
+	"super" : "RPRouteNamingStrategy",
+	"type" : "normal" }

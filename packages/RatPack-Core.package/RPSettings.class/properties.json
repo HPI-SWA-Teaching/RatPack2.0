@@ -1,0 +1,15 @@
+{
+	"category" : "RatPack-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"serverRunning",
+		"values" ],
+	"name" : "RPSettings",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "RatPack-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"modelDictinary",
+		"idDictionary" ],
+	"name" : "RPImageDatabase",
+	"pools" : [
+		 ],
+	"super" : "RPDatabase",
+	"type" : "normal" }

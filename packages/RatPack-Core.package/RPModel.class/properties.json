@@ -1,0 +1,15 @@
+{
+	"category" : "RatPack-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"metadata" ],
+	"name" : "RPModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

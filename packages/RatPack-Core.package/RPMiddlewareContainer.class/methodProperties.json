@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"atHandler:" : "re 6/26/2018 12:18",
+		"createInstanceFromSymbol:" : "re 6/26/2018 13:18",
+		"globalMiddleware" : "re 6/20/2018 22:00",
+		"globalMiddlewareKey" : "re 6/20/2018 22:00",
+		"includeGlobalMiddleware:" : "lj 5/30/2018 14:47",
+		"instanceForName:" : "re 6/26/2018 12:19",
+		"instances" : "re 6/26/2018 12:20",
+		"instancesForHandler:" : "lj 5/24/2018 00:06",
+		"registerMiddleware:forHandler:" : "re 6/26/2018 12:18",
+		"settings" : "lj 6/5/2018 08:29",
+		"settings:" : "lj 6/5/2018 08:29",
+		"symbolsForHandler" : "re 6/26/2018 12:18" } }

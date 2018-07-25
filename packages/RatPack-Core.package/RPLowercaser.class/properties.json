@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPLowercaser",
+	"pools" : [
+		 ],
+	"super" : "RPRouteNamingStrategy",
+	"type" : "normal" }

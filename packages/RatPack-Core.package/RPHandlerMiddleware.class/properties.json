@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"application" ],
+	"name" : "RPHandlerMiddleware",
+	"pools" : [
+		 ],
+	"super" : "RPMiddleware",
+	"type" : "normal" }

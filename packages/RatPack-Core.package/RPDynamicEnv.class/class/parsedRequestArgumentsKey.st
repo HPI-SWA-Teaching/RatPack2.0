@@ -1,0 +1,4 @@
+constants
+parsedRequestArgumentsKey
+	
+	^ #rpParsedRequestArguments
