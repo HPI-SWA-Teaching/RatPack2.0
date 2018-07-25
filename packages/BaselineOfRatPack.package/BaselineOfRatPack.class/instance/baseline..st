@@ -8,7 +8,7 @@ baseline: spec
 				version: #stable;
 				repository: 'http://www.squeaksource.com/MetacelloRepository'].
 		spec
-			package: 'RatPack-Core' with: [spec requires: #('KomHttpServer', 'RatPack-Help', 'RatPack-Templating', 'RatPack-UI')];
+			package: 'RatPack-Core' with: [spec requires: #('KomHttpServer' 'RatPack-Help' 'RatPack-Templating' 'RatPack-UI')];
 			package: 'RatPack-Example' with: [spec requires: #('default')];
 			package: 'RatPack-Help';
 			package: 'RatPack-Templating';
