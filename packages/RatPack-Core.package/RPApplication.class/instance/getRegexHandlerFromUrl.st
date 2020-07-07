@@ -2,7 +2,7 @@ routing
 getRegexHandlerFromUrl
 
 	| method methodRoutes regexHandlerAssociation |
-	method := self request method asLowercase asSymbol asMutator.
+	method := self request method asLowercase asSymbol asSimpleSetter.
 	methodRoutes := self routesFor: method.
 
 	^ regexHandlerAssociation := methodRoutes
